@@ -8,8 +8,14 @@ h1. Installation / Setup
 
 Create a Home/parse_keys.h file with defining your keys like so:
 
+pre.
 #define PARSE_APPLICATION_ID @"wang"
 #define PARSE_CLIENT_KEY @"chung"
+
+Then execute the Makefile with your keys set to add some items to the "store":
+
+pre.
+PARSE_APPLICATION_ID=wang PARSE_MASTER_KEY=wangchung make
 
 h1. Unimplemented APIs
 
