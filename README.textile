@@ -1,0 +1,52 @@
+h1. PixelThings
+
+An old app of mine rebuilt using the parse.com SDK.
+
+currently a WIP.
+
+h1. Installation / Setup
+
+Create a Home/parse_keys.h file with defining your keys like so:
+
+#define PARSE_APPLICATION_ID @"wang"
+#define PARSE_CLIENT_KEY @"chung"
+
+h1. Unimplemented APIs
+
+pre. //these need to be implemented for full functionality
+- (NSArray *) fetchFriends: (NSString *) username
+- (BOOL) addFriend: (NSString *) username : (NSString *) friendUsername
+- (BOOL) removeFriend: (NSString *) username : (NSString *) friendUsername
+- (BOOL) updateStatus: (NSString *) username : (NSString *) status
+- (Friend *) randomFriend: (NSString *) username
+- (NSArray *) fetchRoom: (NSString *) username
+- (BOOL) sendInvite: (NSString *) username : (NSString *) email : (NSString *) message
+- (BOOL) saveCharacter: (NSString *) username : (Character *) bodyParts
+- (Character *) fetchCharacter: (NSString *) username
+- (BOOL) saveProfile: (NSString *) username : (NSString *) deviceId : (NSString *) facebookUserId
+- (BOOL) likeRoom: (NSString *) username : (NSString *) friendUsername
+- (BOOL) visitRoom: (NSString *) username : (NSString *) friendUsername
+- (PaginatedLikes *) fetchRecentLikes: (NSString *) username : (int32_t) page
+- (PaginatedVisits *) fetchRecentVisits: (NSString *) username : (int32_t) page
+- (PaginatedWallItems *) fetchRecentWallItems: (NSString *) username : (int32_t) page : (BOOL) mine
+- (NSArray *) fetchForums
+- (NSArray *) fetchChatrooms
+- (PaginatedTopics *) fetchTopics: (int32_t) forumId : (int32_t) page
+- (BOOL) saveTopic: (NSString *) username : (int32_t) forumId : (NSString *) title
+- (PaginatedPosts *) fetchPosts: (int32_t) topicId : (int32_t) page
+- (BOOL) savePost: (NSString *) username : (int32_t) topicId : (NSString *) body
+- (int32_t) getPoints: (NSString *) username
+- (NSString *) getImageUrl: (NSString *) name
+- (BOOL) doCharacterAnimation: (NSString *) username
+- (BOOL) saveWallMessage: (NSString *) username : (NSString *) friendUsername : (NSString *) message
+- (BOOL) saveScreenshot: (NSString *) username : (NSArray *) bytes
+- (BOOL) purchaseItem: (NSString *) username : (int32_t) itemId : (int32_t) quantity
+- (NSArray *) getInventoryItems: (NSString *) username
+- (NSArray *) fetchPurchasedItems: (NSString *) username : (NSString *) categoryDescription
+- (NSArray *) getSkeletonPieceList: (NSString *) skeletonName : (NSString *) pieceName
+- (BOOL) saveAvatarScreenshot: (NSString *) username : (NSArray *) bytes
+- (BOOL) saveAvatarMessage: (NSString *) username : (NSString *) email : (NSString *) message
+- (BOOL) loginToFunjiStore: (NSString *) username
+- (NSArray *) getInventoryAvatarItems: (NSString *) skeletonName : (NSString *) pieceName
+- (NSArray *) fetchExternalApps: (NSString *) username
+- (BOOL) interactWithFriend: (NSString *) username : (NSString *) friendUsername : (NSString *) interaction

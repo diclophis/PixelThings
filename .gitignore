@@ -1,0 +1,5 @@
+PixelThings.xcodeproj/*.pbxuser
+PixelThings.xcodeproj/*.perspectivev3
+PixelThings.xcodeproj/project.xcworkspace
+PixelThings.xcodeproj/xcuserdata
+Home/parse_keys.h

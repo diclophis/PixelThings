@@ -1,0 +1,1763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C68C5D105B06640024FF72 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C68C5C105B06640024FF72 /* Entitlements.plist */; };
+		C21304D910362CCC00851F65 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304D810362CCC00851F65 /* AddressBook.framework */; };
+		C21304DB10362CCC00851F65 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304DA10362CCC00851F65 /* AddressBookUI.framework */; };
+		C21304E110362CCC00851F65 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304E010362CCC00851F65 /* CFNetwork.framework */; };
+		C21304E510362CCC00851F65 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304E410362CCC00851F65 /* CoreFoundation.framework */; };
+		C21304E710362CCC00851F65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304E610362CCC00851F65 /* CoreGraphics.framework */; };
+		C21304E910362CCC00851F65 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304E810362CCC00851F65 /* CoreLocation.framework */; };
+		C21304EB10362CCC00851F65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304EA10362CCC00851F65 /* Foundation.framework */; };
+		C21304F310362CCC00851F65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304F210362CCC00851F65 /* QuartzCore.framework */; };
+		C21304F710362CCC00851F65 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304F610362CCC00851F65 /* SystemConfiguration.framework */; };
+		C21304F910362CCC00851F65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21304F810362CCC00851F65 /* UIKit.framework */; };
+		C27757991034A09E00A76042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C27757981034A09E00A76042 /* main.m */; };
+		C27758231034A25400A76042 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757AE1034A25400A76042 /* Default.png */; };
+		C27758241034A25400A76042 /* Fortunes.plist in Resources */ = {isa = PBXBuildFile; fileRef = C27757AF1034A25400A76042 /* Fortunes.plist */; };
+		C27758261034A25400A76042 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757B11034A25400A76042 /* Icon.png */; };
+		C277584A1034A25400A76042 /* ui_add.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757D71034A25400A76042 /* ui_add.png */; };
+		C277584B1034A25400A76042 /* ui_addfromroom.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757D81034A25400A76042 /* ui_addfromroom.png */; };
+		C277584D1034A25400A76042 /* ui_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757DA1034A25400A76042 /* ui_back.png */; };
+		C277584F1034A25400A76042 /* ui_backtab.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757DC1034A25400A76042 /* ui_backtab.png */; };
+		C27758521034A25400A76042 /* ui_community.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757DF1034A25400A76042 /* ui_community.png */; };
+		C27758531034A25400A76042 /* ui_del.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757E01034A25400A76042 /* ui_del.png */; };
+		C27758571034A25400A76042 /* ui_forum.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757E41034A25400A76042 /* ui_forum.png */; };
+		C27758581034A25400A76042 /* ui_forumadd.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757E51034A25400A76042 /* ui_forumadd.png */; };
+		C27758591034A25400A76042 /* ui_forumback.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757E61034A25400A76042 /* ui_forumback.png */; };
+		C277585A1034A25400A76042 /* ui_forumloadmore.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757E71034A25400A76042 /* ui_forumloadmore.png */; };
+		C277585B1034A25400A76042 /* ui_forummessageclose.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757E81034A25400A76042 /* ui_forummessageclose.png */; };
+		C277585C1034A25400A76042 /* ui_forumnewtopic.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757E91034A25400A76042 /* ui_forumnewtopic.png */; };
+		C277585D1034A25400A76042 /* ui_forumreload.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757EA1034A25400A76042 /* ui_forumreload.png */; };
+		C277585E1034A25400A76042 /* ui_forumrules.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757EB1034A25400A76042 /* ui_forumrules.png */; };
+		C277585F1034A25400A76042 /* ui_forumrulesbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757EC1034A25400A76042 /* ui_forumrulesbutton.png */; };
+		C27758601034A25400A76042 /* ui_friends.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757ED1034A25400A76042 /* ui_friends.png */; };
+		C27758691034A25400A76042 /* ui_invite.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757F61034A25400A76042 /* ui_invite.png */; };
+		C277586A1034A25400A76042 /* ui_invitemenubutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757F71034A25400A76042 /* ui_invitemenubutton.png */; };
+		C277586B1034A25400A76042 /* ui_like.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757F81034A25400A76042 /* ui_like.png */; };
+		C277586C1034A25400A76042 /* ui_login.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757F91034A25400A76042 /* ui_login.png */; };
+		C277586D1034A25400A76042 /* ui_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757FA1034A25400A76042 /* ui_logo.png */; };
+		C277586F1034A25400A76042 /* ui_menubg.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757FC1034A25400A76042 /* ui_menubg.png */; };
+		C27758701034A25400A76042 /* ui_message.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757FD1034A25400A76042 /* ui_message.png */; };
+		C27758721034A25400A76042 /* ui_myhome.png in Resources */ = {isa = PBXBuildFile; fileRef = C27757FF1034A25400A76042 /* ui_myhome.png */; };
+		C27758731034A25400A76042 /* ui_myhomeback.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758001034A25400A76042 /* ui_myhomeback.png */; };
+		C27758741034A25400A76042 /* ui_myhomebg.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758011034A25400A76042 /* ui_myhomebg.png */; };
+		C27758771034A25400A76042 /* ui_neighbormenubg.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758041034A25400A76042 /* ui_neighbormenubg.png */; };
+		C27758781034A25400A76042 /* ui_neighbors.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758051034A25400A76042 /* ui_neighbors.png */; };
+		C277587B1034A25400A76042 /* ui_random.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758081034A25400A76042 /* ui_random.png */; };
+		C277587D1034A25400A76042 /* ui_registration.png in Resources */ = {isa = PBXBuildFile; fileRef = C277580A1034A25400A76042 /* ui_registration.png */; };
+		C277587E1034A25400A76042 /* ui_saveroom.png in Resources */ = {isa = PBXBuildFile; fileRef = C277580B1034A25400A76042 /* ui_saveroom.png */; };
+		C277587F1034A25400A76042 /* ui_scrollerback.png in Resources */ = {isa = PBXBuildFile; fileRef = C277580C1034A25400A76042 /* ui_scrollerback.png */; };
+		C27758801034A25400A76042 /* ui_scrollerforward.png in Resources */ = {isa = PBXBuildFile; fileRef = C277580D1034A25400A76042 /* ui_scrollerforward.png */; };
+		C27758811034A25400A76042 /* ui_showhidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C277580E1034A25400A76042 /* ui_showhidemenu.png */; };
+		C27758881034A25400A76042 /* ui_statusbg.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758151034A25400A76042 /* ui_statusbg.png */; };
+		C277588A1034A25400A76042 /* ui_store.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758171034A25400A76042 /* ui_store.png */; };
+		C27758901034A25400A76042 /* ui_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = C277581D1034A25400A76042 /* ui_tab.png */; };
+		C27758911034A25400A76042 /* ui_useroffline.png in Resources */ = {isa = PBXBuildFile; fileRef = C277581E1034A25400A76042 /* ui_useroffline.png */; };
+		C27758921034A25400A76042 /* ui_useronline.png in Resources */ = {isa = PBXBuildFile; fileRef = C277581F1034A25400A76042 /* ui_useronline.png */; };
+		C27758931034A25400A76042 /* ui_wall.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758201034A25400A76042 /* ui_wall.png */; };
+		C27758951034A25400A76042 /* ui_wallitems.png in Resources */ = {isa = PBXBuildFile; fileRef = C27758221034A25400A76042 /* ui_wallitems.png */; };
+		D6B195A4107D3C3900B98EDB /* ui_friendspressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B195A3107D3C3900B98EDB /* ui_friendspressed.png */; };
+		D6B19605107D489F00B98EDB /* ui_addpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B195FF107D489F00B98EDB /* ui_addpressed.png */; };
+		D6B19606107D489F00B98EDB /* ui_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B19600107D489F00B98EDB /* ui_chat.png */; };
+		D6B19607107D489F00B98EDB /* ui_chatpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B19601107D489F00B98EDB /* ui_chatpressed.png */; };
+		D6B19608107D489F00B98EDB /* ui_forumpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B19602107D489F00B98EDB /* ui_forumpressed.png */; };
+		D6B19609107D489F00B98EDB /* ui_invitepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B19603107D489F00B98EDB /* ui_invitepressed.png */; };
+		D6B1960A107D489F00B98EDB /* ui_neighborspressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B19604107D489F00B98EDB /* ui_neighborspressed.png */; };
+		FC53E2B314724BD400153A8B /* ViewableRoomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC53E2B214724BD400153A8B /* ViewableRoomItem.m */; };
+		FC6203ED147088A500EDB11F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6203EC147088A500EDB11F /* Parse.framework */; };
+		FC7C3B0614723ED8007688D8 /* ActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AE614723ED8007688D8 /* ActionsViewController.xib */; };
+		FC7C3B0714723ED8007688D8 /* AddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AE714723ED8007688D8 /* AddFriendViewController.xib */; };
+		FC7C3B0814723ED8007688D8 /* AvatarSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AE814723ED8007688D8 /* AvatarSelectorViewController.xib */; };
+		FC7C3B0914723ED8007688D8 /* ChangeMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AE914723ED8007688D8 /* ChangeMeViewController.xib */; };
+		FC7C3B0A14723ED8007688D8 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AEA14723ED8007688D8 /* ChatViewController.xib */; };
+		FC7C3B0B14723ED8007688D8 /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AEB14723ED8007688D8 /* CommunityViewController.xib */; };
+		FC7C3B0C14723ED8007688D8 /* DecorateMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AEC14723ED8007688D8 /* DecorateMenuViewController.xib */; };
+		FC7C3B0D14723ED8007688D8 /* ForumRulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AED14723ED8007688D8 /* ForumRulesViewController.xib */; };
+		FC7C3B0E14723ED8007688D8 /* FriendsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AEE14723ED8007688D8 /* FriendsListViewController.xib */; };
+		FC7C3B0F14723ED8007688D8 /* FriendsMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AEF14723ED8007688D8 /* FriendsMenuViewController.xib */; };
+		FC7C3B1014723ED8007688D8 /* FriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF014723ED8007688D8 /* FriendViewController.xib */; };
+		FC7C3B1114723ED8007688D8 /* FriendWallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF114723ED8007688D8 /* FriendWallViewController.xib */; };
+		FC7C3B1214723ED8007688D8 /* GamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF214723ED8007688D8 /* GamesViewController.xib */; };
+		FC7C3B1314723ED8007688D8 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF314723ED8007688D8 /* InfoViewController.xib */; };
+		FC7C3B1414723ED8007688D8 /* InviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF414723ED8007688D8 /* InviteViewController.xib */; };
+		FC7C3B1514723ED8007688D8 /* ItemSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF514723ED8007688D8 /* ItemSelectorViewController.xib */; };
+		FC7C3B1614723ED8007688D8 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF614723ED8007688D8 /* LoginController.xib */; };
+		FC7C3B1714723ED8007688D8 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF714723ED8007688D8 /* MainMenuViewController.xib */; };
+		FC7C3B1814723ED8007688D8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF814723ED8007688D8 /* MainWindow.xib */; };
+		FC7C3B1914723ED8007688D8 /* MyStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AF914723ED8007688D8 /* MyStatusViewController.xib */; };
+		FC7C3B1A14723ED8007688D8 /* NeighborMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AFA14723ED8007688D8 /* NeighborMenuViewController.xib */; };
+		FC7C3B1B14723ED8007688D8 /* NeighborViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AFB14723ED8007688D8 /* NeighborViewController.xib */; };
+		FC7C3B1C14723ED8007688D8 /* PickerBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AFC14723ED8007688D8 /* PickerBody.xib */; };
+		FC7C3B1D14723ED8007688D8 /* PickerClothes.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AFD14723ED8007688D8 /* PickerClothes.xib */; };
+		FC7C3B1E14723ED8007688D8 /* PostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AFE14723ED8007688D8 /* PostsViewController.xib */; };
+		FC7C3B1F14723ED8007688D8 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AFF14723ED8007688D8 /* RegisterViewController.xib */; };
+		FC7C3B2014723ED8007688D8 /* RoomSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3B0014723ED8007688D8 /* RoomSelectorViewController.xib */; };
+		FC7C3B2114723ED8007688D8 /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3B0114723ED8007688D8 /* RoomViewController.xib */; };
+		FC7C3B2214723ED8007688D8 /* StoreItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3B0214723ED8007688D8 /* StoreItemsViewController.xib */; };
+		FC7C3B2314723ED8007688D8 /* StoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3B0314723ED8007688D8 /* StoreViewController.xib */; };
+		FC7C3B2414723ED8007688D8 /* TopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3B0414723ED8007688D8 /* TopicsViewController.xib */; };
+		FC7C3B2514723ED8007688D8 /* WallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3B0514723ED8007688D8 /* WallViewController.xib */; };
+		FCAD914214708979005FFA89 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAD914114708979005FFA89 /* AudioToolbox.framework */; };
+		FCAD91441470898A005FFA89 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAD91431470898A005FFA89 /* MobileCoreServices.framework */; };
+		FCAD91461470899C005FFA89 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAD91451470899C005FFA89 /* libz.1.1.3.dylib */; };
+		FCAD9148147089A6005FFA89 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAD9147147089A6005FFA89 /* Security.framework */; };
+		FCC3213D137558EA007B27E0 /* ui_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC3213C137558EA007B27E0 /* ui_blank.png */; };
+		FCCB87A7147240190016F26D /* AnimatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86C0147240190016F26D /* AnimatedObject.m */; };
+		FCCB87A8147240190016F26D /* AnimatedPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86C2147240190016F26D /* AnimatedPerson.m */; };
+		FCCB87A9147240190016F26D /* AnimationSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86C4147240190016F26D /* AnimationSystem.m */; };
+		FCCB87AA147240190016F26D /* AnimationSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCCB86C5147240190016F26D /* AnimationSystem.plist */; };
+		FCCB87AB147240190016F26D /* ClickableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86C7147240190016F26D /* ClickableView.m */; };
+		FCCB87AC147240190016F26D /* PointObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86C9147240190016F26D /* PointObject.m */; };
+		FCCB87AD147240190016F26D /* StatusBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86CB147240190016F26D /* StatusBubble.m */; };
+		FCCB87AE147240190016F26D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86CE147240190016F26D /* AppDelegate.m */; };
+		FCCB87AF147240190016F26D /* Fortunes.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86D0147240190016F26D /* Fortunes.m */; };
+		FCCB87B0147240190016F26D /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86D2147240190016F26D /* Item.m */; };
+		FCCB87B1147240190016F26D /* ItemSelectorScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86D4147240190016F26D /* ItemSelectorScrollView.m */; };
+		FCCB87B2147240190016F26D /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86D6147240190016F26D /* LoginController.m */; };
+		FCCB87B3147240190016F26D /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86D8147240190016F26D /* NSDataAdditions.m */; };
+		FCCB87B4147240190016F26D /* NSDataHashing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86DA147240190016F26D /* NSDataHashing.m */; };
+		FCCB87B5147240190016F26D /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86DC147240190016F26D /* NSDateAdditions.m */; };
+		FCCB87B6147240190016F26D /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86DE147240190016F26D /* NSStringAdditions.m */; };
+		FCCB87B7147240190016F26D /* SaveWallMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86E1147240190016F26D /* SaveWallMessage.m */; };
+		FCCB87B8147240190016F26D /* AddFriendOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86E4147240190016F26D /* AddFriendOperation.m */; };
+		FCCB87B9147240190016F26D /* AuthenticateOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86E6147240190016F26D /* AuthenticateOperation.m */; };
+		FCCB87BA147240190016F26D /* CheckReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86E8147240190016F26D /* CheckReachabilityOperation.m */; };
+		FCCB87BB147240190016F26D /* DoCharacterAnimationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86EA147240190016F26D /* DoCharacterAnimationOperation.m */; };
+		FCCB87BC147240190016F26D /* FetchAvatarOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86EC147240190016F26D /* FetchAvatarOperation.m */; };
+		FCCB87BD147240190016F26D /* FetchCategoriesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86EE147240190016F26D /* FetchCategoriesOperation.m */; };
+		FCCB87BE147240190016F26D /* FetchCharacterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86F0147240190016F26D /* FetchCharacterOperation.m */; };
+		FCCB87BF147240190016F26D /* FetchExternalAppsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86F2147240190016F26D /* FetchExternalAppsOperation.m */; };
+		FCCB87C0147240190016F26D /* FetchForumsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86F4147240190016F26D /* FetchForumsOperation.m */; };
+		FCCB87C1147240190016F26D /* FetchFriendsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86F6147240190016F26D /* FetchFriendsOperation.m */; };
+		FCCB87C2147240190016F26D /* FetchFriendsRoomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86F8147240190016F26D /* FetchFriendsRoomOperation.m */; };
+		FCCB87C3147240190016F26D /* FetchImagesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86FA147240190016F26D /* FetchImagesOperation.m */; };
+		FCCB87C4147240190016F26D /* FetchMyRoomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86FC147240190016F26D /* FetchMyRoomOperation.m */; };
+		FCCB87C5147240190016F26D /* FetchPostsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB86FE147240190016F26D /* FetchPostsOperation.m */; };
+		FCCB87C6147240190016F26D /* FetchPurchasedItemsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8700147240190016F26D /* FetchPurchasedItemsOperation.m */; };
+		FCCB87C7147240190016F26D /* FetchRandomFriendsRoomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8702147240190016F26D /* FetchRandomFriendsRoomOperation.m */; };
+		FCCB87C8147240190016F26D /* FetchRecentLikesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8704147240190016F26D /* FetchRecentLikesOperation.m */; };
+		FCCB87C9147240190016F26D /* FetchRecentVisitsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8706147240190016F26D /* FetchRecentVisitsOperation.m */; };
+		FCCB87CA147240190016F26D /* FetchRecentWallItemsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8708147240190016F26D /* FetchRecentWallItemsOperation.m */; };
+		FCCB87CB147240190016F26D /* FetchScoreOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB870A147240190016F26D /* FetchScoreOperation.m */; };
+		FCCB87CC147240190016F26D /* FetchTopicsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB870C147240190016F26D /* FetchTopicsOperation.m */; };
+		FCCB87CD147240190016F26D /* GetImageUrlOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB870E147240190016F26D /* GetImageUrlOperation.m */; };
+		FCCB87CE147240190016F26D /* GetStoreItemsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8710147240190016F26D /* GetStoreItemsOperation.m */; };
+		FCCB87CF147240190016F26D /* InteractWithFriendOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8712147240190016F26D /* InteractWithFriendOperation.m */; };
+		FCCB87D0147240190016F26D /* LikeRoomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8714147240190016F26D /* LikeRoomOperation.m */; };
+		FCCB87D1147240190016F26D /* Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8716147240190016F26D /* Operation.m */; };
+		FCCB87D2147240190016F26D /* OperationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8718147240190016F26D /* OperationsManager.m */; };
+		FCCB87D3147240190016F26D /* PurchaseItemOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB871A147240190016F26D /* PurchaseItemOperation.m */; };
+		FCCB87D4147240190016F26D /* RegisterAccountOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB871C147240190016F26D /* RegisterAccountOperation.m */; };
+		FCCB87D5147240190016F26D /* RemoveFriendOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB871E147240190016F26D /* RemoveFriendOperation.m */; };
+		FCCB87D6147240190016F26D /* SaveAvatarOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8720147240190016F26D /* SaveAvatarOperation.m */; };
+		FCCB87D7147240190016F26D /* SavePostOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8722147240190016F26D /* SavePostOperation.m */; };
+		FCCB87D8147240190016F26D /* SaveRoomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8724147240190016F26D /* SaveRoomOperation.m */; };
+		FCCB87D9147240190016F26D /* SaveToPhotoAlbumOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8726147240190016F26D /* SaveToPhotoAlbumOperation.m */; };
+		FCCB87DA147240190016F26D /* SaveTopicOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8728147240190016F26D /* SaveTopicOperation.m */; };
+		FCCB87DB147240190016F26D /* SendInviteOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB872A147240190016F26D /* SendInviteOperation.m */; };
+		FCCB87DC147240190016F26D /* SimpleOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB872C147240190016F26D /* SimpleOperation.m */; };
+		FCCB87DD147240190016F26D /* UpdateStatusOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB872E147240190016F26D /* UpdateStatusOperation.m */; };
+		FCCB87DE147240190016F26D /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8731147240190016F26D /* Avatar.m */; };
+		FCCB87DF147240190016F26D /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8733147240190016F26D /* Character.m */; };
+		FCCB87E0147240190016F26D /* Forum.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8735147240190016F26D /* Forum.m */; };
+		FCCB87E1147240190016F26D /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8737147240190016F26D /* Friend.m */; };
+		FCCB87E2147240190016F26D /* FunItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8739147240190016F26D /* FunItem.m */; };
+		FCCB87E3147240190016F26D /* ItemCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB873B147240190016F26D /* ItemCategory.m */; };
+		FCCB87E4147240190016F26D /* Like.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB873D147240190016F26D /* Like.m */; };
+		FCCB87E5147240190016F26D /* PaginatedLikes.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB873F147240190016F26D /* PaginatedLikes.m */; };
+		FCCB87E6147240190016F26D /* PaginatedPosts.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8741147240190016F26D /* PaginatedPosts.m */; };
+		FCCB87E7147240190016F26D /* PaginatedTopics.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8743147240190016F26D /* PaginatedTopics.m */; };
+		FCCB87E8147240190016F26D /* PaginatedVisits.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8745147240190016F26D /* PaginatedVisits.m */; };
+		FCCB87E9147240190016F26D /* PaginatedWallItems.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8747147240190016F26D /* PaginatedWallItems.m */; };
+		FCCB87EA147240190016F26D /* ParseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8749147240190016F26D /* ParseClient.m */; };
+		FCCB87EB147240190016F26D /* ParseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB874B147240190016F26D /* ParseObject.m */; };
+		FCCB87EC147240190016F26D /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB874D147240190016F26D /* Post.m */; };
+		FCCB87ED147240190016F26D /* RoomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB874F147240190016F26D /* RoomItem.m */; };
+		FCCB87EE147240190016F26D /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8751147240190016F26D /* Score.m */; };
+		FCCB87EF147240190016F26D /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8753147240190016F26D /* Topic.m */; };
+		FCCB87F0147240190016F26D /* Visit.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8755147240190016F26D /* Visit.m */; };
+		FCCB87F1147240190016F26D /* WallItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8757147240190016F26D /* WallItem.m */; };
+		FCCB87F2147240190016F26D /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB875A147240190016F26D /* ActionsViewController.m */; };
+		FCCB87F3147240190016F26D /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB875C147240190016F26D /* AddFriendViewController.m */; };
+		FCCB87F4147240190016F26D /* AvatarSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB875E147240190016F26D /* AvatarSelectorViewController.m */; };
+		FCCB87F5147240190016F26D /* ChangeMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8760147240190016F26D /* ChangeMeViewController.m */; };
+		FCCB87F6147240190016F26D /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8762147240190016F26D /* ChatViewController.m */; };
+		FCCB87F7147240190016F26D /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8764147240190016F26D /* CommunityViewController.m */; };
+		FCCB87F8147240190016F26D /* DecorateMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8766147240190016F26D /* DecorateMenuViewController.m */; };
+		FCCB87F9147240190016F26D /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8768147240190016F26D /* DrawerViewController.m */; };
+		FCCB87FA147240190016F26D /* ForumRulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB876A147240190016F26D /* ForumRulesViewController.m */; };
+		FCCB87FB147240190016F26D /* FriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB876C147240190016F26D /* FriendsListViewController.m */; };
+		FCCB87FC147240190016F26D /* FriendsMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB876E147240190016F26D /* FriendsMenuViewController.m */; };
+		FCCB87FD147240190016F26D /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8770147240190016F26D /* FriendViewController.m */; };
+		FCCB87FE147240190016F26D /* FriendWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8772147240190016F26D /* FriendWallViewController.m */; };
+		FCCB87FF147240190016F26D /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8774147240190016F26D /* GamesViewController.m */; };
+		FCCB8800147240190016F26D /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8776147240190016F26D /* InfoViewController.m */; };
+		FCCB8801147240190016F26D /* InviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8778147240190016F26D /* InviteViewController.m */; };
+		FCCB8802147240190016F26D /* ItemSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB877A147240190016F26D /* ItemSelectorViewController.m */; };
+		FCCB8803147240190016F26D /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB877C147240190016F26D /* MainMenuViewController.m */; };
+		FCCB8804147240190016F26D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB877E147240190016F26D /* MainViewController.m */; };
+		FCCB8805147240190016F26D /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8780147240190016F26D /* MenuViewController.m */; };
+		FCCB8806147240190016F26D /* MyStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8782147240190016F26D /* MyStatusViewController.m */; };
+		FCCB8807147240190016F26D /* NeighborMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8784147240190016F26D /* NeighborMenuViewController.m */; };
+		FCCB8808147240190016F26D /* NeighborViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8786147240190016F26D /* NeighborViewController.m */; };
+		FCCB8809147240190016F26D /* PickerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8788147240190016F26D /* PickerBase.m */; };
+		FCCB880A147240190016F26D /* PickerBody.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB878A147240190016F26D /* PickerBody.m */; };
+		FCCB880B147240190016F26D /* PickerClothes.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB878C147240190016F26D /* PickerClothes.m */; };
+		FCCB880C147240190016F26D /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB878E147240190016F26D /* PostsViewController.m */; };
+		FCCB880D147240190016F26D /* RecentLikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8790147240190016F26D /* RecentLikesViewController.m */; };
+		FCCB880E147240190016F26D /* RecentVisitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8792147240190016F26D /* RecentVisitsViewController.m */; };
+		FCCB880F147240190016F26D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8794147240190016F26D /* RegisterViewController.m */; };
+		FCCB8810147240190016F26D /* RoomSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8796147240190016F26D /* RoomSelectorViewController.m */; };
+		FCCB8811147240190016F26D /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB8798147240190016F26D /* RoomViewController.m */; };
+		FCCB8812147240190016F26D /* SimpleExecutingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB879A147240190016F26D /* SimpleExecutingViewController.m */; };
+		FCCB8813147240190016F26D /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB879C147240190016F26D /* StartViewController.m */; };
+		FCCB8814147240190016F26D /* StoreItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB879E147240190016F26D /* StoreItemsViewController.m */; };
+		FCCB8815147240190016F26D /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB87A0147240190016F26D /* StoreViewController.m */; };
+		FCCB8816147240190016F26D /* TickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB87A2147240190016F26D /* TickerViewController.m */; };
+		FCCB8817147240190016F26D /* TopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB87A4147240190016F26D /* TopicsViewController.m */; };
+		FCCB8818147240190016F26D /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCB87A6147240190016F26D /* WallViewController.m */; };
+		FCDAF78A1374FE6B00737146 /* ui_pickerbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDAF7891374FE6B00737146 /* ui_pickerbottom.png */; };
+		FCDAF78F1374FEF500737146 /* ui_pickerleft.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDAF78E1374FEF500737146 /* ui_pickerleft.png */; };
+		FCDAF7971374FFB100737146 /* ui_next.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDAF7961374FFB100737146 /* ui_next.png */; };
+		FCDAF79F1375005000737146 /* ui_pickertop.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDAF79E1375005000737146 /* ui_pickertop.png */; };
+		FCDAF7A71375009C00737146 /* ui_pickerside.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDAF7A61375009C00737146 /* ui_pickerside.png */; };
+		FCDAF7B4137503CE00737146 /* ui_world.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDAF7B3137503CE00737146 /* ui_world.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00C68C5C105B06640024FF72 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		C21304D810362CCC00851F65 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C21304DA10362CCC00851F65 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		C21304E010362CCC00851F65 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C21304E410362CCC00851F65 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C21304E610362CCC00851F65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C21304E810362CCC00851F65 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C21304EA10362CCC00851F65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C21304F210362CCC00851F65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C21304F610362CCC00851F65 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C21304F810362CCC00851F65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C27757981034A09E00A76042 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C27757AE1034A25400A76042 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C27757AF1034A25400A76042 /* Fortunes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fortunes.plist; sourceTree = "<group>"; };
+		C27757B01034A25400A76042 /* Home-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Home-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C27757B11034A25400A76042 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C27757D71034A25400A76042 /* ui_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_add.png; sourceTree = "<group>"; };
+		C27757D81034A25400A76042 /* ui_addfromroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_addfromroom.png; sourceTree = "<group>"; };
+		C27757DA1034A25400A76042 /* ui_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_back.png; sourceTree = "<group>"; };
+		C27757DC1034A25400A76042 /* ui_backtab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_backtab.png; sourceTree = "<group>"; };
+		C27757DF1034A25400A76042 /* ui_community.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_community.png; sourceTree = "<group>"; };
+		C27757E01034A25400A76042 /* ui_del.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_del.png; sourceTree = "<group>"; };
+		C27757E41034A25400A76042 /* ui_forum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forum.png; sourceTree = "<group>"; };
+		C27757E51034A25400A76042 /* ui_forumadd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forumadd.png; sourceTree = "<group>"; };
+		C27757E61034A25400A76042 /* ui_forumback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forumback.png; sourceTree = "<group>"; };
+		C27757E71034A25400A76042 /* ui_forumloadmore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forumloadmore.png; sourceTree = "<group>"; };
+		C27757E81034A25400A76042 /* ui_forummessageclose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forummessageclose.png; sourceTree = "<group>"; };
+		C27757E91034A25400A76042 /* ui_forumnewtopic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forumnewtopic.png; sourceTree = "<group>"; };
+		C27757EA1034A25400A76042 /* ui_forumreload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forumreload.png; sourceTree = "<group>"; };
+		C27757EB1034A25400A76042 /* ui_forumrules.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forumrules.png; sourceTree = "<group>"; };
+		C27757EC1034A25400A76042 /* ui_forumrulesbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forumrulesbutton.png; sourceTree = "<group>"; };
+		C27757ED1034A25400A76042 /* ui_friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_friends.png; sourceTree = "<group>"; };
+		C27757F61034A25400A76042 /* ui_invite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_invite.png; sourceTree = "<group>"; };
+		C27757F71034A25400A76042 /* ui_invitemenubutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_invitemenubutton.png; sourceTree = "<group>"; };
+		C27757F81034A25400A76042 /* ui_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_like.png; sourceTree = "<group>"; };
+		C27757F91034A25400A76042 /* ui_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_login.png; sourceTree = "<group>"; };
+		C27757FA1034A25400A76042 /* ui_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_logo.png; sourceTree = "<group>"; };
+		C27757FC1034A25400A76042 /* ui_menubg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_menubg.png; sourceTree = "<group>"; };
+		C27757FD1034A25400A76042 /* ui_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_message.png; sourceTree = "<group>"; };
+		C27757FF1034A25400A76042 /* ui_myhome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_myhome.png; sourceTree = "<group>"; };
+		C27758001034A25400A76042 /* ui_myhomeback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_myhomeback.png; sourceTree = "<group>"; };
+		C27758011034A25400A76042 /* ui_myhomebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_myhomebg.png; sourceTree = "<group>"; };
+		C27758041034A25400A76042 /* ui_neighbormenubg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_neighbormenubg.png; sourceTree = "<group>"; };
+		C27758051034A25400A76042 /* ui_neighbors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_neighbors.png; sourceTree = "<group>"; };
+		C27758081034A25400A76042 /* ui_random.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_random.png; sourceTree = "<group>"; };
+		C277580A1034A25400A76042 /* ui_registration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_registration.png; sourceTree = "<group>"; };
+		C277580B1034A25400A76042 /* ui_saveroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_saveroom.png; sourceTree = "<group>"; };
+		C277580C1034A25400A76042 /* ui_scrollerback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_scrollerback.png; sourceTree = "<group>"; };
+		C277580D1034A25400A76042 /* ui_scrollerforward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_scrollerforward.png; sourceTree = "<group>"; };
+		C277580E1034A25400A76042 /* ui_showhidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_showhidemenu.png; sourceTree = "<group>"; };
+		C27758151034A25400A76042 /* ui_statusbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_statusbg.png; sourceTree = "<group>"; };
+		C27758171034A25400A76042 /* ui_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_store.png; sourceTree = "<group>"; };
+		C277581D1034A25400A76042 /* ui_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_tab.png; sourceTree = "<group>"; };
+		C277581E1034A25400A76042 /* ui_useroffline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_useroffline.png; sourceTree = "<group>"; };
+		C277581F1034A25400A76042 /* ui_useronline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_useronline.png; sourceTree = "<group>"; };
+		C27758201034A25400A76042 /* ui_wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_wall.png; sourceTree = "<group>"; };
+		C27758221034A25400A76042 /* ui_wallitems.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_wallitems.png; sourceTree = "<group>"; };
+		D6B195A3107D3C3900B98EDB /* ui_friendspressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_friendspressed.png; sourceTree = "<group>"; };
+		D6B195FF107D489F00B98EDB /* ui_addpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_addpressed.png; sourceTree = "<group>"; };
+		D6B19600107D489F00B98EDB /* ui_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_chat.png; sourceTree = "<group>"; };
+		D6B19601107D489F00B98EDB /* ui_chatpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_chatpressed.png; sourceTree = "<group>"; };
+		D6B19602107D489F00B98EDB /* ui_forumpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_forumpressed.png; sourceTree = "<group>"; };
+		D6B19603107D489F00B98EDB /* ui_invitepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_invitepressed.png; sourceTree = "<group>"; };
+		D6B19604107D489F00B98EDB /* ui_neighborspressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_neighborspressed.png; sourceTree = "<group>"; };
+		FC53E2B114724BD400153A8B /* ViewableRoomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewableRoomItem.h; sourceTree = "<group>"; };
+		FC53E2B214724BD400153A8B /* ViewableRoomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewableRoomItem.m; sourceTree = "<group>"; };
+		FC6203EC147088A500EDB11F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FC7C3AE614723ED8007688D8 /* ActionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionsViewController.xib; sourceTree = "<group>"; };
+		FC7C3AE714723ED8007688D8 /* AddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriendViewController.xib; sourceTree = "<group>"; };
+		FC7C3AE814723ED8007688D8 /* AvatarSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarSelectorViewController.xib; sourceTree = "<group>"; };
+		FC7C3AE914723ED8007688D8 /* ChangeMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeMeViewController.xib; sourceTree = "<group>"; };
+		FC7C3AEA14723ED8007688D8 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		FC7C3AEB14723ED8007688D8 /* CommunityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityViewController.xib; sourceTree = "<group>"; };
+		FC7C3AEC14723ED8007688D8 /* DecorateMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecorateMenuViewController.xib; sourceTree = "<group>"; };
+		FC7C3AED14723ED8007688D8 /* ForumRulesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForumRulesViewController.xib; sourceTree = "<group>"; };
+		FC7C3AEE14723ED8007688D8 /* FriendsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsListViewController.xib; sourceTree = "<group>"; };
+		FC7C3AEF14723ED8007688D8 /* FriendsMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsMenuViewController.xib; sourceTree = "<group>"; };
+		FC7C3AF014723ED8007688D8 /* FriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendViewController.xib; sourceTree = "<group>"; };
+		FC7C3AF114723ED8007688D8 /* FriendWallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendWallViewController.xib; sourceTree = "<group>"; };
+		FC7C3AF214723ED8007688D8 /* GamesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamesViewController.xib; sourceTree = "<group>"; };
+		FC7C3AF314723ED8007688D8 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		FC7C3AF414723ED8007688D8 /* InviteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InviteViewController.xib; sourceTree = "<group>"; };
+		FC7C3AF514723ED8007688D8 /* ItemSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemSelectorViewController.xib; sourceTree = "<group>"; };
+		FC7C3AF614723ED8007688D8 /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		FC7C3AF714723ED8007688D8 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
+		FC7C3AF814723ED8007688D8 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		FC7C3AF914723ED8007688D8 /* MyStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyStatusViewController.xib; sourceTree = "<group>"; };
+		FC7C3AFA14723ED8007688D8 /* NeighborMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NeighborMenuViewController.xib; sourceTree = "<group>"; };
+		FC7C3AFB14723ED8007688D8 /* NeighborViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NeighborViewController.xib; sourceTree = "<group>"; };
+		FC7C3AFC14723ED8007688D8 /* PickerBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerBody.xib; sourceTree = "<group>"; };
+		FC7C3AFD14723ED8007688D8 /* PickerClothes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerClothes.xib; sourceTree = "<group>"; };
+		FC7C3AFE14723ED8007688D8 /* PostsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostsViewController.xib; sourceTree = "<group>"; };
+		FC7C3AFF14723ED8007688D8 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FC7C3B0014723ED8007688D8 /* RoomSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomSelectorViewController.xib; sourceTree = "<group>"; };
+		FC7C3B0114723ED8007688D8 /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
+		FC7C3B0214723ED8007688D8 /* StoreItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreItemsViewController.xib; sourceTree = "<group>"; };
+		FC7C3B0314723ED8007688D8 /* StoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreViewController.xib; sourceTree = "<group>"; };
+		FC7C3B0414723ED8007688D8 /* TopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicsViewController.xib; sourceTree = "<group>"; };
+		FC7C3B0514723ED8007688D8 /* WallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WallViewController.xib; sourceTree = "<group>"; };
+		FCAA46761472F12C00AA174B /* parse_keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse_keys.h; sourceTree = "<group>"; };
+		FCAD914114708979005FFA89 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FCAD91431470898A005FFA89 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FCAD91451470899C005FFA89 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		FCAD9147147089A6005FFA89 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FCC3213C137558EA007B27E0 /* ui_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_blank.png; sourceTree = "<group>"; };
+		FCCB86BF147240190016F26D /* AnimatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedObject.h; sourceTree = "<group>"; };
+		FCCB86C0147240190016F26D /* AnimatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedObject.m; sourceTree = "<group>"; };
+		FCCB86C1147240190016F26D /* AnimatedPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedPerson.h; sourceTree = "<group>"; };
+		FCCB86C2147240190016F26D /* AnimatedPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedPerson.m; sourceTree = "<group>"; };
+		FCCB86C3147240190016F26D /* AnimationSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSystem.h; sourceTree = "<group>"; };
+		FCCB86C4147240190016F26D /* AnimationSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSystem.m; sourceTree = "<group>"; };
+		FCCB86C5147240190016F26D /* AnimationSystem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AnimationSystem.plist; sourceTree = "<group>"; };
+		FCCB86C6147240190016F26D /* ClickableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableView.h; sourceTree = "<group>"; };
+		FCCB86C7147240190016F26D /* ClickableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableView.m; sourceTree = "<group>"; };
+		FCCB86C8147240190016F26D /* PointObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointObject.h; sourceTree = "<group>"; };
+		FCCB86C9147240190016F26D /* PointObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointObject.m; sourceTree = "<group>"; };
+		FCCB86CA147240190016F26D /* StatusBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBubble.h; sourceTree = "<group>"; };
+		FCCB86CB147240190016F26D /* StatusBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBubble.m; sourceTree = "<group>"; };
+		FCCB86CD147240190016F26D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCCB86CE147240190016F26D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCCB86CF147240190016F26D /* Fortunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fortunes.h; sourceTree = "<group>"; };
+		FCCB86D0147240190016F26D /* Fortunes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fortunes.m; sourceTree = "<group>"; };
+		FCCB86D1147240190016F26D /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		FCCB86D2147240190016F26D /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		FCCB86D3147240190016F26D /* ItemSelectorScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSelectorScrollView.h; sourceTree = "<group>"; };
+		FCCB86D4147240190016F26D /* ItemSelectorScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemSelectorScrollView.m; sourceTree = "<group>"; };
+		FCCB86D5147240190016F26D /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		FCCB86D6147240190016F26D /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		FCCB86D7147240190016F26D /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		FCCB86D8147240190016F26D /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		FCCB86D9147240190016F26D /* NSDataHashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataHashing.h; sourceTree = "<group>"; };
+		FCCB86DA147240190016F26D /* NSDataHashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataHashing.m; sourceTree = "<group>"; };
+		FCCB86DB147240190016F26D /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
+		FCCB86DC147240190016F26D /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
+		FCCB86DD147240190016F26D /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		FCCB86DE147240190016F26D /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
+		FCCB86DF147240190016F26D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FCCB86E0147240190016F26D /* SaveWallMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveWallMessage.h; sourceTree = "<group>"; };
+		FCCB86E1147240190016F26D /* SaveWallMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveWallMessage.m; sourceTree = "<group>"; };
+		FCCB86E3147240190016F26D /* AddFriendOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendOperation.h; sourceTree = "<group>"; };
+		FCCB86E4147240190016F26D /* AddFriendOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendOperation.m; sourceTree = "<group>"; };
+		FCCB86E5147240190016F26D /* AuthenticateOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticateOperation.h; sourceTree = "<group>"; };
+		FCCB86E6147240190016F26D /* AuthenticateOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticateOperation.m; sourceTree = "<group>"; };
+		FCCB86E7147240190016F26D /* CheckReachabilityOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckReachabilityOperation.h; sourceTree = "<group>"; };
+		FCCB86E8147240190016F26D /* CheckReachabilityOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckReachabilityOperation.m; sourceTree = "<group>"; };
+		FCCB86E9147240190016F26D /* DoCharacterAnimationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoCharacterAnimationOperation.h; sourceTree = "<group>"; };
+		FCCB86EA147240190016F26D /* DoCharacterAnimationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoCharacterAnimationOperation.m; sourceTree = "<group>"; };
+		FCCB86EB147240190016F26D /* FetchAvatarOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchAvatarOperation.h; sourceTree = "<group>"; };
+		FCCB86EC147240190016F26D /* FetchAvatarOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchAvatarOperation.m; sourceTree = "<group>"; };
+		FCCB86ED147240190016F26D /* FetchCategoriesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchCategoriesOperation.h; sourceTree = "<group>"; };
+		FCCB86EE147240190016F26D /* FetchCategoriesOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchCategoriesOperation.m; sourceTree = "<group>"; };
+		FCCB86EF147240190016F26D /* FetchCharacterOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchCharacterOperation.h; sourceTree = "<group>"; };
+		FCCB86F0147240190016F26D /* FetchCharacterOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchCharacterOperation.m; sourceTree = "<group>"; };
+		FCCB86F1147240190016F26D /* FetchExternalAppsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchExternalAppsOperation.h; sourceTree = "<group>"; };
+		FCCB86F2147240190016F26D /* FetchExternalAppsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchExternalAppsOperation.m; sourceTree = "<group>"; };
+		FCCB86F3147240190016F26D /* FetchForumsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchForumsOperation.h; sourceTree = "<group>"; };
+		FCCB86F4147240190016F26D /* FetchForumsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchForumsOperation.m; sourceTree = "<group>"; };
+		FCCB86F5147240190016F26D /* FetchFriendsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchFriendsOperation.h; sourceTree = "<group>"; };
+		FCCB86F6147240190016F26D /* FetchFriendsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchFriendsOperation.m; sourceTree = "<group>"; };
+		FCCB86F7147240190016F26D /* FetchFriendsRoomOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchFriendsRoomOperation.h; sourceTree = "<group>"; };
+		FCCB86F8147240190016F26D /* FetchFriendsRoomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchFriendsRoomOperation.m; sourceTree = "<group>"; };
+		FCCB86F9147240190016F26D /* FetchImagesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchImagesOperation.h; sourceTree = "<group>"; };
+		FCCB86FA147240190016F26D /* FetchImagesOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchImagesOperation.m; sourceTree = "<group>"; };
+		FCCB86FB147240190016F26D /* FetchMyRoomOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchMyRoomOperation.h; sourceTree = "<group>"; };
+		FCCB86FC147240190016F26D /* FetchMyRoomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchMyRoomOperation.m; sourceTree = "<group>"; };
+		FCCB86FD147240190016F26D /* FetchPostsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchPostsOperation.h; sourceTree = "<group>"; };
+		FCCB86FE147240190016F26D /* FetchPostsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchPostsOperation.m; sourceTree = "<group>"; };
+		FCCB86FF147240190016F26D /* FetchPurchasedItemsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchPurchasedItemsOperation.h; sourceTree = "<group>"; };
+		FCCB8700147240190016F26D /* FetchPurchasedItemsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchPurchasedItemsOperation.m; sourceTree = "<group>"; };
+		FCCB8701147240190016F26D /* FetchRandomFriendsRoomOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchRandomFriendsRoomOperation.h; sourceTree = "<group>"; };
+		FCCB8702147240190016F26D /* FetchRandomFriendsRoomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchRandomFriendsRoomOperation.m; sourceTree = "<group>"; };
+		FCCB8703147240190016F26D /* FetchRecentLikesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchRecentLikesOperation.h; sourceTree = "<group>"; };
+		FCCB8704147240190016F26D /* FetchRecentLikesOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchRecentLikesOperation.m; sourceTree = "<group>"; };
+		FCCB8705147240190016F26D /* FetchRecentVisitsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchRecentVisitsOperation.h; sourceTree = "<group>"; };
+		FCCB8706147240190016F26D /* FetchRecentVisitsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchRecentVisitsOperation.m; sourceTree = "<group>"; };
+		FCCB8707147240190016F26D /* FetchRecentWallItemsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchRecentWallItemsOperation.h; sourceTree = "<group>"; };
+		FCCB8708147240190016F26D /* FetchRecentWallItemsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchRecentWallItemsOperation.m; sourceTree = "<group>"; };
+		FCCB8709147240190016F26D /* FetchScoreOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchScoreOperation.h; sourceTree = "<group>"; };
+		FCCB870A147240190016F26D /* FetchScoreOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchScoreOperation.m; sourceTree = "<group>"; };
+		FCCB870B147240190016F26D /* FetchTopicsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchTopicsOperation.h; sourceTree = "<group>"; };
+		FCCB870C147240190016F26D /* FetchTopicsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchTopicsOperation.m; sourceTree = "<group>"; };
+		FCCB870D147240190016F26D /* GetImageUrlOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetImageUrlOperation.h; sourceTree = "<group>"; };
+		FCCB870E147240190016F26D /* GetImageUrlOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetImageUrlOperation.m; sourceTree = "<group>"; };
+		FCCB870F147240190016F26D /* GetStoreItemsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStoreItemsOperation.h; sourceTree = "<group>"; };
+		FCCB8710147240190016F26D /* GetStoreItemsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStoreItemsOperation.m; sourceTree = "<group>"; };
+		FCCB8711147240190016F26D /* InteractWithFriendOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractWithFriendOperation.h; sourceTree = "<group>"; };
+		FCCB8712147240190016F26D /* InteractWithFriendOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractWithFriendOperation.m; sourceTree = "<group>"; };
+		FCCB8713147240190016F26D /* LikeRoomOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeRoomOperation.h; sourceTree = "<group>"; };
+		FCCB8714147240190016F26D /* LikeRoomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeRoomOperation.m; sourceTree = "<group>"; };
+		FCCB8715147240190016F26D /* Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operation.h; sourceTree = "<group>"; };
+		FCCB8716147240190016F26D /* Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operation.m; sourceTree = "<group>"; };
+		FCCB8717147240190016F26D /* OperationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationsManager.h; sourceTree = "<group>"; };
+		FCCB8718147240190016F26D /* OperationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationsManager.m; sourceTree = "<group>"; };
+		FCCB8719147240190016F26D /* PurchaseItemOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseItemOperation.h; sourceTree = "<group>"; };
+		FCCB871A147240190016F26D /* PurchaseItemOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseItemOperation.m; sourceTree = "<group>"; };
+		FCCB871B147240190016F26D /* RegisterAccountOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAccountOperation.h; sourceTree = "<group>"; };
+		FCCB871C147240190016F26D /* RegisterAccountOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAccountOperation.m; sourceTree = "<group>"; };
+		FCCB871D147240190016F26D /* RemoveFriendOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveFriendOperation.h; sourceTree = "<group>"; };
+		FCCB871E147240190016F26D /* RemoveFriendOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveFriendOperation.m; sourceTree = "<group>"; };
+		FCCB871F147240190016F26D /* SaveAvatarOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAvatarOperation.h; sourceTree = "<group>"; };
+		FCCB8720147240190016F26D /* SaveAvatarOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveAvatarOperation.m; sourceTree = "<group>"; };
+		FCCB8721147240190016F26D /* SavePostOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavePostOperation.h; sourceTree = "<group>"; };
+		FCCB8722147240190016F26D /* SavePostOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavePostOperation.m; sourceTree = "<group>"; };
+		FCCB8723147240190016F26D /* SaveRoomOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveRoomOperation.h; sourceTree = "<group>"; };
+		FCCB8724147240190016F26D /* SaveRoomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveRoomOperation.m; sourceTree = "<group>"; };
+		FCCB8725147240190016F26D /* SaveToPhotoAlbumOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveToPhotoAlbumOperation.h; sourceTree = "<group>"; };
+		FCCB8726147240190016F26D /* SaveToPhotoAlbumOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveToPhotoAlbumOperation.m; sourceTree = "<group>"; };
+		FCCB8727147240190016F26D /* SaveTopicOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveTopicOperation.h; sourceTree = "<group>"; };
+		FCCB8728147240190016F26D /* SaveTopicOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveTopicOperation.m; sourceTree = "<group>"; };
+		FCCB8729147240190016F26D /* SendInviteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendInviteOperation.h; sourceTree = "<group>"; };
+		FCCB872A147240190016F26D /* SendInviteOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendInviteOperation.m; sourceTree = "<group>"; };
+		FCCB872B147240190016F26D /* SimpleOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleOperation.h; sourceTree = "<group>"; };
+		FCCB872C147240190016F26D /* SimpleOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOperation.m; sourceTree = "<group>"; };
+		FCCB872D147240190016F26D /* UpdateStatusOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateStatusOperation.h; sourceTree = "<group>"; };
+		FCCB872E147240190016F26D /* UpdateStatusOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateStatusOperation.m; sourceTree = "<group>"; };
+		FCCB8730147240190016F26D /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
+		FCCB8731147240190016F26D /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
+		FCCB8732147240190016F26D /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		FCCB8733147240190016F26D /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		FCCB8734147240190016F26D /* Forum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forum.h; sourceTree = "<group>"; };
+		FCCB8735147240190016F26D /* Forum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forum.m; sourceTree = "<group>"; };
+		FCCB8736147240190016F26D /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		FCCB8737147240190016F26D /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		FCCB8738147240190016F26D /* FunItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunItem.h; sourceTree = "<group>"; };
+		FCCB8739147240190016F26D /* FunItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunItem.m; sourceTree = "<group>"; };
+		FCCB873A147240190016F26D /* ItemCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCategory.h; sourceTree = "<group>"; };
+		FCCB873B147240190016F26D /* ItemCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCategory.m; sourceTree = "<group>"; };
+		FCCB873C147240190016F26D /* Like.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Like.h; sourceTree = "<group>"; };
+		FCCB873D147240190016F26D /* Like.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Like.m; sourceTree = "<group>"; };
+		FCCB873E147240190016F26D /* PaginatedLikes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginatedLikes.h; sourceTree = "<group>"; };
+		FCCB873F147240190016F26D /* PaginatedLikes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginatedLikes.m; sourceTree = "<group>"; };
+		FCCB8740147240190016F26D /* PaginatedPosts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginatedPosts.h; sourceTree = "<group>"; };
+		FCCB8741147240190016F26D /* PaginatedPosts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginatedPosts.m; sourceTree = "<group>"; };
+		FCCB8742147240190016F26D /* PaginatedTopics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginatedTopics.h; sourceTree = "<group>"; };
+		FCCB8743147240190016F26D /* PaginatedTopics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginatedTopics.m; sourceTree = "<group>"; };
+		FCCB8744147240190016F26D /* PaginatedVisits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginatedVisits.h; sourceTree = "<group>"; };
+		FCCB8745147240190016F26D /* PaginatedVisits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginatedVisits.m; sourceTree = "<group>"; };
+		FCCB8746147240190016F26D /* PaginatedWallItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginatedWallItems.h; sourceTree = "<group>"; };
+		FCCB8747147240190016F26D /* PaginatedWallItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginatedWallItems.m; sourceTree = "<group>"; };
+		FCCB8748147240190016F26D /* ParseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseClient.h; sourceTree = "<group>"; };
+		FCCB8749147240190016F26D /* ParseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseClient.m; sourceTree = "<group>"; };
+		FCCB874A147240190016F26D /* ParseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseObject.h; sourceTree = "<group>"; };
+		FCCB874B147240190016F26D /* ParseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseObject.m; sourceTree = "<group>"; };
+		FCCB874C147240190016F26D /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		FCCB874D147240190016F26D /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		FCCB874E147240190016F26D /* RoomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomItem.h; sourceTree = "<group>"; };
+		FCCB874F147240190016F26D /* RoomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomItem.m; sourceTree = "<group>"; };
+		FCCB8750147240190016F26D /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		FCCB8751147240190016F26D /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		FCCB8752147240190016F26D /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		FCCB8753147240190016F26D /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		FCCB8754147240190016F26D /* Visit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visit.h; sourceTree = "<group>"; };
+		FCCB8755147240190016F26D /* Visit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Visit.m; sourceTree = "<group>"; };
+		FCCB8756147240190016F26D /* WallItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallItem.h; sourceTree = "<group>"; };
+		FCCB8757147240190016F26D /* WallItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallItem.m; sourceTree = "<group>"; };
+		FCCB8759147240190016F26D /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
+		FCCB875A147240190016F26D /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
+		FCCB875B147240190016F26D /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		FCCB875C147240190016F26D /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		FCCB875D147240190016F26D /* AvatarSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarSelectorViewController.h; sourceTree = "<group>"; };
+		FCCB875E147240190016F26D /* AvatarSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarSelectorViewController.m; sourceTree = "<group>"; };
+		FCCB875F147240190016F26D /* ChangeMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeMeViewController.h; sourceTree = "<group>"; };
+		FCCB8760147240190016F26D /* ChangeMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeMeViewController.m; sourceTree = "<group>"; };
+		FCCB8761147240190016F26D /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		FCCB8762147240190016F26D /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		FCCB8763147240190016F26D /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		FCCB8764147240190016F26D /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+		FCCB8765147240190016F26D /* DecorateMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecorateMenuViewController.h; sourceTree = "<group>"; };
+		FCCB8766147240190016F26D /* DecorateMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecorateMenuViewController.m; sourceTree = "<group>"; };
+		FCCB8767147240190016F26D /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		FCCB8768147240190016F26D /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		FCCB8769147240190016F26D /* ForumRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumRulesViewController.h; sourceTree = "<group>"; };
+		FCCB876A147240190016F26D /* ForumRulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumRulesViewController.m; sourceTree = "<group>"; };
+		FCCB876B147240190016F26D /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsListViewController.h; sourceTree = "<group>"; };
+		FCCB876C147240190016F26D /* FriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsListViewController.m; sourceTree = "<group>"; };
+		FCCB876D147240190016F26D /* FriendsMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsMenuViewController.h; sourceTree = "<group>"; };
+		FCCB876E147240190016F26D /* FriendsMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsMenuViewController.m; sourceTree = "<group>"; };
+		FCCB876F147240190016F26D /* FriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
+		FCCB8770147240190016F26D /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
+		FCCB8771147240190016F26D /* FriendWallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendWallViewController.h; sourceTree = "<group>"; };
+		FCCB8772147240190016F26D /* FriendWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendWallViewController.m; sourceTree = "<group>"; };
+		FCCB8773147240190016F26D /* GamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesViewController.h; sourceTree = "<group>"; };
+		FCCB8774147240190016F26D /* GamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamesViewController.m; sourceTree = "<group>"; };
+		FCCB8775147240190016F26D /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		FCCB8776147240190016F26D /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		FCCB8777147240190016F26D /* InviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteViewController.h; sourceTree = "<group>"; };
+		FCCB8778147240190016F26D /* InviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteViewController.m; sourceTree = "<group>"; };
+		FCCB8779147240190016F26D /* ItemSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSelectorViewController.h; sourceTree = "<group>"; };
+		FCCB877A147240190016F26D /* ItemSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemSelectorViewController.m; sourceTree = "<group>"; };
+		FCCB877B147240190016F26D /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		FCCB877C147240190016F26D /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		FCCB877D147240190016F26D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FCCB877E147240190016F26D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FCCB877F147240190016F26D /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FCCB8780147240190016F26D /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		FCCB8781147240190016F26D /* MyStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStatusViewController.h; sourceTree = "<group>"; };
+		FCCB8782147240190016F26D /* MyStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStatusViewController.m; sourceTree = "<group>"; };
+		FCCB8783147240190016F26D /* NeighborMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeighborMenuViewController.h; sourceTree = "<group>"; };
+		FCCB8784147240190016F26D /* NeighborMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeighborMenuViewController.m; sourceTree = "<group>"; };
+		FCCB8785147240190016F26D /* NeighborViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeighborViewController.h; sourceTree = "<group>"; };
+		FCCB8786147240190016F26D /* NeighborViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeighborViewController.m; sourceTree = "<group>"; };
+		FCCB8787147240190016F26D /* PickerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerBase.h; sourceTree = "<group>"; };
+		FCCB8788147240190016F26D /* PickerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerBase.m; sourceTree = "<group>"; };
+		FCCB8789147240190016F26D /* PickerBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerBody.h; sourceTree = "<group>"; };
+		FCCB878A147240190016F26D /* PickerBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerBody.m; sourceTree = "<group>"; };
+		FCCB878B147240190016F26D /* PickerClothes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerClothes.h; sourceTree = "<group>"; };
+		FCCB878C147240190016F26D /* PickerClothes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerClothes.m; sourceTree = "<group>"; };
+		FCCB878D147240190016F26D /* PostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
+		FCCB878E147240190016F26D /* PostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
+		FCCB878F147240190016F26D /* RecentLikesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentLikesViewController.h; sourceTree = "<group>"; };
+		FCCB8790147240190016F26D /* RecentLikesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentLikesViewController.m; sourceTree = "<group>"; };
+		FCCB8791147240190016F26D /* RecentVisitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentVisitsViewController.h; sourceTree = "<group>"; };
+		FCCB8792147240190016F26D /* RecentVisitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentVisitsViewController.m; sourceTree = "<group>"; };
+		FCCB8793147240190016F26D /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FCCB8794147240190016F26D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		FCCB8795147240190016F26D /* RoomSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomSelectorViewController.h; sourceTree = "<group>"; };
+		FCCB8796147240190016F26D /* RoomSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomSelectorViewController.m; sourceTree = "<group>"; };
+		FCCB8797147240190016F26D /* RoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomViewController.h; sourceTree = "<group>"; };
+		FCCB8798147240190016F26D /* RoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewController.m; sourceTree = "<group>"; };
+		FCCB8799147240190016F26D /* SimpleExecutingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleExecutingViewController.h; sourceTree = "<group>"; };
+		FCCB879A147240190016F26D /* SimpleExecutingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleExecutingViewController.m; sourceTree = "<group>"; };
+		FCCB879B147240190016F26D /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		FCCB879C147240190016F26D /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		FCCB879D147240190016F26D /* StoreItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreItemsViewController.h; sourceTree = "<group>"; };
+		FCCB879E147240190016F26D /* StoreItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreItemsViewController.m; sourceTree = "<group>"; };
+		FCCB879F147240190016F26D /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		FCCB87A0147240190016F26D /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		FCCB87A1147240190016F26D /* TickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerViewController.h; sourceTree = "<group>"; };
+		FCCB87A2147240190016F26D /* TickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerViewController.m; sourceTree = "<group>"; };
+		FCCB87A3147240190016F26D /* TopicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicsViewController.h; sourceTree = "<group>"; };
+		FCCB87A4147240190016F26D /* TopicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicsViewController.m; sourceTree = "<group>"; };
+		FCCB87A5147240190016F26D /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallViewController.h; sourceTree = "<group>"; };
+		FCCB87A6147240190016F26D /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallViewController.m; sourceTree = "<group>"; };
+		FCDAF7891374FE6B00737146 /* ui_pickerbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_pickerbottom.png; sourceTree = "<group>"; };
+		FCDAF78E1374FEF500737146 /* ui_pickerleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_pickerleft.png; sourceTree = "<group>"; };
+		FCDAF7961374FFB100737146 /* ui_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_next.png; sourceTree = "<group>"; };
+		FCDAF79E1375005000737146 /* ui_pickertop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_pickertop.png; sourceTree = "<group>"; };
+		FCDAF7A61375009C00737146 /* ui_pickerside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_pickerside.png; sourceTree = "<group>"; };
+		FCDAF7B3137503CE00737146 /* ui_world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_world.png; sourceTree = "<group>"; };
+		FCEC0B541372566A00F4857B /* Pixel Things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel Things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C215B7411033A893007C3C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAD9148147089A6005FFA89 /* Security.framework in Frameworks */,
+				FCAD91461470899C005FFA89 /* libz.1.1.3.dylib in Frameworks */,
+				FCAD91441470898A005FFA89 /* MobileCoreServices.framework in Frameworks */,
+				FCAD914214708979005FFA89 /* AudioToolbox.framework in Frameworks */,
+				C21304D910362CCC00851F65 /* AddressBook.framework in Frameworks */,
+				C21304DB10362CCC00851F65 /* AddressBookUI.framework in Frameworks */,
+				C21304E110362CCC00851F65 /* CFNetwork.framework in Frameworks */,
+				C21304E510362CCC00851F65 /* CoreFoundation.framework in Frameworks */,
+				C21304E710362CCC00851F65 /* CoreGraphics.framework in Frameworks */,
+				C21304E910362CCC00851F65 /* CoreLocation.framework in Frameworks */,
+				C21304EB10362CCC00851F65 /* Foundation.framework in Frameworks */,
+				C21304F310362CCC00851F65 /* QuartzCore.framework in Frameworks */,
+				C21304F710362CCC00851F65 /* SystemConfiguration.framework in Frameworks */,
+				C21304F910362CCC00851F65 /* UIKit.framework in Frameworks */,
+				FC6203ED147088A500EDB11F /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C215B7241033A827007C3C2C = {
+			isa = PBXGroup;
+			children = (
+				C2745B251034A5AA00E479A1 /* Frameworks */,
+				C215B73C1033A883007C3C2C /* Home */,
+				C215B7441033A893007C3C2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C215B73C1033A883007C3C2C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FCAA46761472F12C00AA174B /* parse_keys.h */,
+				FCCB86BD147240190016F26D /* Classes */,
+				FC7C3AE514723ED8007688D8 /* Interfaces */,
+				C27757D61034A25400A76042 /* LookAndFeel */,
+				C27757AF1034A25400A76042 /* Fortunes.plist */,
+				00C68C5C105B06640024FF72 /* Entitlements.plist */,
+				C27757B01034A25400A76042 /* Home-Info.plist */,
+				C27757AE1034A25400A76042 /* Default.png */,
+				C27757B11034A25400A76042 /* Icon.png */,
+				C27757981034A09E00A76042 /* main.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C215B7441033A893007C3C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEC0B541372566A00F4857B /* Pixel Things.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2745B251034A5AA00E479A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD9147147089A6005FFA89 /* Security.framework */,
+				FCAD91451470899C005FFA89 /* libz.1.1.3.dylib */,
+				FCAD91431470898A005FFA89 /* MobileCoreServices.framework */,
+				FCAD914114708979005FFA89 /* AudioToolbox.framework */,
+				FC6203EC147088A500EDB11F /* Parse.framework */,
+				C21304D810362CCC00851F65 /* AddressBook.framework */,
+				C21304DA10362CCC00851F65 /* AddressBookUI.framework */,
+				C21304E010362CCC00851F65 /* CFNetwork.framework */,
+				C21304E410362CCC00851F65 /* CoreFoundation.framework */,
+				C21304E610362CCC00851F65 /* CoreGraphics.framework */,
+				C21304E810362CCC00851F65 /* CoreLocation.framework */,
+				C21304EA10362CCC00851F65 /* Foundation.framework */,
+				C21304F210362CCC00851F65 /* QuartzCore.framework */,
+				C21304F610362CCC00851F65 /* SystemConfiguration.framework */,
+				C21304F810362CCC00851F65 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C27757D61034A25400A76042 /* LookAndFeel */ = {
+			isa = PBXGroup;
+			children = (
+				FCC3213C137558EA007B27E0 /* ui_blank.png */,
+				FCDAF7B3137503CE00737146 /* ui_world.png */,
+				FCDAF7A61375009C00737146 /* ui_pickerside.png */,
+				FCDAF79E1375005000737146 /* ui_pickertop.png */,
+				FCDAF7961374FFB100737146 /* ui_next.png */,
+				FCDAF78E1374FEF500737146 /* ui_pickerleft.png */,
+				FCDAF7891374FE6B00737146 /* ui_pickerbottom.png */,
+				D6B195FF107D489F00B98EDB /* ui_addpressed.png */,
+				D6B19600107D489F00B98EDB /* ui_chat.png */,
+				D6B19601107D489F00B98EDB /* ui_chatpressed.png */,
+				D6B19602107D489F00B98EDB /* ui_forumpressed.png */,
+				D6B19603107D489F00B98EDB /* ui_invitepressed.png */,
+				D6B19604107D489F00B98EDB /* ui_neighborspressed.png */,
+				D6B195A3107D3C3900B98EDB /* ui_friendspressed.png */,
+				C27757D71034A25400A76042 /* ui_add.png */,
+				C27757D81034A25400A76042 /* ui_addfromroom.png */,
+				C27757DA1034A25400A76042 /* ui_back.png */,
+				C27757DC1034A25400A76042 /* ui_backtab.png */,
+				C27757DF1034A25400A76042 /* ui_community.png */,
+				C27757E01034A25400A76042 /* ui_del.png */,
+				C27757E41034A25400A76042 /* ui_forum.png */,
+				C27757E51034A25400A76042 /* ui_forumadd.png */,
+				C27757E61034A25400A76042 /* ui_forumback.png */,
+				C27757E71034A25400A76042 /* ui_forumloadmore.png */,
+				C27757E81034A25400A76042 /* ui_forummessageclose.png */,
+				C27757E91034A25400A76042 /* ui_forumnewtopic.png */,
+				C27757EA1034A25400A76042 /* ui_forumreload.png */,
+				C27757EB1034A25400A76042 /* ui_forumrules.png */,
+				C27757EC1034A25400A76042 /* ui_forumrulesbutton.png */,
+				C27757ED1034A25400A76042 /* ui_friends.png */,
+				C27757F61034A25400A76042 /* ui_invite.png */,
+				C27757F71034A25400A76042 /* ui_invitemenubutton.png */,
+				C27757F81034A25400A76042 /* ui_like.png */,
+				C27757F91034A25400A76042 /* ui_login.png */,
+				C27757FA1034A25400A76042 /* ui_logo.png */,
+				C27757FC1034A25400A76042 /* ui_menubg.png */,
+				C27757FD1034A25400A76042 /* ui_message.png */,
+				C27757FF1034A25400A76042 /* ui_myhome.png */,
+				C27758001034A25400A76042 /* ui_myhomeback.png */,
+				C27758011034A25400A76042 /* ui_myhomebg.png */,
+				C27758041034A25400A76042 /* ui_neighbormenubg.png */,
+				C27758051034A25400A76042 /* ui_neighbors.png */,
+				C27758081034A25400A76042 /* ui_random.png */,
+				C277580A1034A25400A76042 /* ui_registration.png */,
+				C277580B1034A25400A76042 /* ui_saveroom.png */,
+				C277580C1034A25400A76042 /* ui_scrollerback.png */,
+				C277580D1034A25400A76042 /* ui_scrollerforward.png */,
+				C277580E1034A25400A76042 /* ui_showhidemenu.png */,
+				C27758151034A25400A76042 /* ui_statusbg.png */,
+				C27758171034A25400A76042 /* ui_store.png */,
+				C277581D1034A25400A76042 /* ui_tab.png */,
+				C277581E1034A25400A76042 /* ui_useroffline.png */,
+				C277581F1034A25400A76042 /* ui_useronline.png */,
+				C27758201034A25400A76042 /* ui_wall.png */,
+				C27758221034A25400A76042 /* ui_wallitems.png */,
+			);
+			path = LookAndFeel;
+			sourceTree = "<group>";
+		};
+		FC7C3AE514723ED8007688D8 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FC7C3AE614723ED8007688D8 /* ActionsViewController.xib */,
+				FC7C3AE714723ED8007688D8 /* AddFriendViewController.xib */,
+				FC7C3AE814723ED8007688D8 /* AvatarSelectorViewController.xib */,
+				FC7C3AE914723ED8007688D8 /* ChangeMeViewController.xib */,
+				FC7C3AEA14723ED8007688D8 /* ChatViewController.xib */,
+				FC7C3AEB14723ED8007688D8 /* CommunityViewController.xib */,
+				FC7C3AEC14723ED8007688D8 /* DecorateMenuViewController.xib */,
+				FC7C3AED14723ED8007688D8 /* ForumRulesViewController.xib */,
+				FC7C3AEE14723ED8007688D8 /* FriendsListViewController.xib */,
+				FC7C3AEF14723ED8007688D8 /* FriendsMenuViewController.xib */,
+				FC7C3AF014723ED8007688D8 /* FriendViewController.xib */,
+				FC7C3AF114723ED8007688D8 /* FriendWallViewController.xib */,
+				FC7C3AF214723ED8007688D8 /* GamesViewController.xib */,
+				FC7C3AF314723ED8007688D8 /* InfoViewController.xib */,
+				FC7C3AF414723ED8007688D8 /* InviteViewController.xib */,
+				FC7C3AF514723ED8007688D8 /* ItemSelectorViewController.xib */,
+				FC7C3AF614723ED8007688D8 /* LoginController.xib */,
+				FC7C3AF714723ED8007688D8 /* MainMenuViewController.xib */,
+				FC7C3AF814723ED8007688D8 /* MainWindow.xib */,
+				FC7C3AF914723ED8007688D8 /* MyStatusViewController.xib */,
+				FC7C3AFA14723ED8007688D8 /* NeighborMenuViewController.xib */,
+				FC7C3AFB14723ED8007688D8 /* NeighborViewController.xib */,
+				FC7C3AFC14723ED8007688D8 /* PickerBody.xib */,
+				FC7C3AFD14723ED8007688D8 /* PickerClothes.xib */,
+				FC7C3AFE14723ED8007688D8 /* PostsViewController.xib */,
+				FC7C3AFF14723ED8007688D8 /* RegisterViewController.xib */,
+				FC7C3B0014723ED8007688D8 /* RoomSelectorViewController.xib */,
+				FC7C3B0114723ED8007688D8 /* RoomViewController.xib */,
+				FC7C3B0214723ED8007688D8 /* StoreItemsViewController.xib */,
+				FC7C3B0314723ED8007688D8 /* StoreViewController.xib */,
+				FC7C3B0414723ED8007688D8 /* TopicsViewController.xib */,
+				FC7C3B0514723ED8007688D8 /* WallViewController.xib */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		FCCB86BD147240190016F26D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB86BE147240190016F26D /* Animation */,
+				FCCB86CC147240190016F26D /* Misc */,
+				FCCB86E2147240190016F26D /* Operations */,
+				FCCB872F147240190016F26D /* ParseWrappers */,
+				FCCB8758147240190016F26D /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FCCB86BE147240190016F26D /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB86BF147240190016F26D /* AnimatedObject.h */,
+				FCCB86C0147240190016F26D /* AnimatedObject.m */,
+				FCCB86C1147240190016F26D /* AnimatedPerson.h */,
+				FCCB86C2147240190016F26D /* AnimatedPerson.m */,
+				FCCB86C3147240190016F26D /* AnimationSystem.h */,
+				FCCB86C4147240190016F26D /* AnimationSystem.m */,
+				FCCB86C5147240190016F26D /* AnimationSystem.plist */,
+				FCCB86C6147240190016F26D /* ClickableView.h */,
+				FCCB86C7147240190016F26D /* ClickableView.m */,
+				FCCB86C8147240190016F26D /* PointObject.h */,
+				FCCB86C9147240190016F26D /* PointObject.m */,
+				FCCB86CA147240190016F26D /* StatusBubble.h */,
+				FCCB86CB147240190016F26D /* StatusBubble.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		FCCB86CC147240190016F26D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB86CD147240190016F26D /* AppDelegate.h */,
+				FCCB86CE147240190016F26D /* AppDelegate.m */,
+				FCCB86CF147240190016F26D /* Fortunes.h */,
+				FCCB86D0147240190016F26D /* Fortunes.m */,
+				FCCB86D1147240190016F26D /* Item.h */,
+				FCCB86D2147240190016F26D /* Item.m */,
+				FCCB86D3147240190016F26D /* ItemSelectorScrollView.h */,
+				FCCB86D4147240190016F26D /* ItemSelectorScrollView.m */,
+				FCCB86D5147240190016F26D /* LoginController.h */,
+				FCCB86D6147240190016F26D /* LoginController.m */,
+				FCCB86D7147240190016F26D /* NSDataAdditions.h */,
+				FCCB86D8147240190016F26D /* NSDataAdditions.m */,
+				FCCB86D9147240190016F26D /* NSDataHashing.h */,
+				FCCB86DA147240190016F26D /* NSDataHashing.m */,
+				FCCB86DB147240190016F26D /* NSDateAdditions.h */,
+				FCCB86DC147240190016F26D /* NSDateAdditions.m */,
+				FCCB86DD147240190016F26D /* NSStringAdditions.h */,
+				FCCB86DE147240190016F26D /* NSStringAdditions.m */,
+				FCCB86DF147240190016F26D /* Reachability.h */,
+				FCCB86E0147240190016F26D /* SaveWallMessage.h */,
+				FCCB86E1147240190016F26D /* SaveWallMessage.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		FCCB86E2147240190016F26D /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB86E3147240190016F26D /* AddFriendOperation.h */,
+				FCCB86E4147240190016F26D /* AddFriendOperation.m */,
+				FCCB86E5147240190016F26D /* AuthenticateOperation.h */,
+				FCCB86E6147240190016F26D /* AuthenticateOperation.m */,
+				FCCB86E7147240190016F26D /* CheckReachabilityOperation.h */,
+				FCCB86E8147240190016F26D /* CheckReachabilityOperation.m */,
+				FCCB86E9147240190016F26D /* DoCharacterAnimationOperation.h */,
+				FCCB86EA147240190016F26D /* DoCharacterAnimationOperation.m */,
+				FCCB86EB147240190016F26D /* FetchAvatarOperation.h */,
+				FCCB86EC147240190016F26D /* FetchAvatarOperation.m */,
+				FCCB86ED147240190016F26D /* FetchCategoriesOperation.h */,
+				FCCB86EE147240190016F26D /* FetchCategoriesOperation.m */,
+				FCCB86EF147240190016F26D /* FetchCharacterOperation.h */,
+				FCCB86F0147240190016F26D /* FetchCharacterOperation.m */,
+				FCCB86F1147240190016F26D /* FetchExternalAppsOperation.h */,
+				FCCB86F2147240190016F26D /* FetchExternalAppsOperation.m */,
+				FCCB86F3147240190016F26D /* FetchForumsOperation.h */,
+				FCCB86F4147240190016F26D /* FetchForumsOperation.m */,
+				FCCB86F5147240190016F26D /* FetchFriendsOperation.h */,
+				FCCB86F6147240190016F26D /* FetchFriendsOperation.m */,
+				FCCB86F7147240190016F26D /* FetchFriendsRoomOperation.h */,
+				FCCB86F8147240190016F26D /* FetchFriendsRoomOperation.m */,
+				FCCB86F9147240190016F26D /* FetchImagesOperation.h */,
+				FCCB86FA147240190016F26D /* FetchImagesOperation.m */,
+				FCCB86FB147240190016F26D /* FetchMyRoomOperation.h */,
+				FCCB86FC147240190016F26D /* FetchMyRoomOperation.m */,
+				FCCB86FD147240190016F26D /* FetchPostsOperation.h */,
+				FCCB86FE147240190016F26D /* FetchPostsOperation.m */,
+				FCCB86FF147240190016F26D /* FetchPurchasedItemsOperation.h */,
+				FCCB8700147240190016F26D /* FetchPurchasedItemsOperation.m */,
+				FCCB8701147240190016F26D /* FetchRandomFriendsRoomOperation.h */,
+				FCCB8702147240190016F26D /* FetchRandomFriendsRoomOperation.m */,
+				FCCB8703147240190016F26D /* FetchRecentLikesOperation.h */,
+				FCCB8704147240190016F26D /* FetchRecentLikesOperation.m */,
+				FCCB8705147240190016F26D /* FetchRecentVisitsOperation.h */,
+				FCCB8706147240190016F26D /* FetchRecentVisitsOperation.m */,
+				FCCB8707147240190016F26D /* FetchRecentWallItemsOperation.h */,
+				FCCB8708147240190016F26D /* FetchRecentWallItemsOperation.m */,
+				FCCB8709147240190016F26D /* FetchScoreOperation.h */,
+				FCCB870A147240190016F26D /* FetchScoreOperation.m */,
+				FCCB870B147240190016F26D /* FetchTopicsOperation.h */,
+				FCCB870C147240190016F26D /* FetchTopicsOperation.m */,
+				FCCB870D147240190016F26D /* GetImageUrlOperation.h */,
+				FCCB870E147240190016F26D /* GetImageUrlOperation.m */,
+				FCCB870F147240190016F26D /* GetStoreItemsOperation.h */,
+				FCCB8710147240190016F26D /* GetStoreItemsOperation.m */,
+				FCCB8711147240190016F26D /* InteractWithFriendOperation.h */,
+				FCCB8712147240190016F26D /* InteractWithFriendOperation.m */,
+				FCCB8713147240190016F26D /* LikeRoomOperation.h */,
+				FCCB8714147240190016F26D /* LikeRoomOperation.m */,
+				FCCB8715147240190016F26D /* Operation.h */,
+				FCCB8716147240190016F26D /* Operation.m */,
+				FCCB8717147240190016F26D /* OperationsManager.h */,
+				FCCB8718147240190016F26D /* OperationsManager.m */,
+				FCCB8719147240190016F26D /* PurchaseItemOperation.h */,
+				FCCB871A147240190016F26D /* PurchaseItemOperation.m */,
+				FCCB871B147240190016F26D /* RegisterAccountOperation.h */,
+				FCCB871C147240190016F26D /* RegisterAccountOperation.m */,
+				FCCB871D147240190016F26D /* RemoveFriendOperation.h */,
+				FCCB871E147240190016F26D /* RemoveFriendOperation.m */,
+				FCCB871F147240190016F26D /* SaveAvatarOperation.h */,
+				FCCB8720147240190016F26D /* SaveAvatarOperation.m */,
+				FCCB8721147240190016F26D /* SavePostOperation.h */,
+				FCCB8722147240190016F26D /* SavePostOperation.m */,
+				FCCB8723147240190016F26D /* SaveRoomOperation.h */,
+				FCCB8724147240190016F26D /* SaveRoomOperation.m */,
+				FCCB8725147240190016F26D /* SaveToPhotoAlbumOperation.h */,
+				FCCB8726147240190016F26D /* SaveToPhotoAlbumOperation.m */,
+				FCCB8727147240190016F26D /* SaveTopicOperation.h */,
+				FCCB8728147240190016F26D /* SaveTopicOperation.m */,
+				FCCB8729147240190016F26D /* SendInviteOperation.h */,
+				FCCB872A147240190016F26D /* SendInviteOperation.m */,
+				FCCB872B147240190016F26D /* SimpleOperation.h */,
+				FCCB872C147240190016F26D /* SimpleOperation.m */,
+				FCCB872D147240190016F26D /* UpdateStatusOperation.h */,
+				FCCB872E147240190016F26D /* UpdateStatusOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		FCCB872F147240190016F26D /* ParseWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E2B114724BD400153A8B /* ViewableRoomItem.h */,
+				FC53E2B214724BD400153A8B /* ViewableRoomItem.m */,
+				FCCB8730147240190016F26D /* Avatar.h */,
+				FCCB8731147240190016F26D /* Avatar.m */,
+				FCCB8732147240190016F26D /* Character.h */,
+				FCCB8733147240190016F26D /* Character.m */,
+				FCCB8734147240190016F26D /* Forum.h */,
+				FCCB8735147240190016F26D /* Forum.m */,
+				FCCB8736147240190016F26D /* Friend.h */,
+				FCCB8737147240190016F26D /* Friend.m */,
+				FCCB8738147240190016F26D /* FunItem.h */,
+				FCCB8739147240190016F26D /* FunItem.m */,
+				FCCB873A147240190016F26D /* ItemCategory.h */,
+				FCCB873B147240190016F26D /* ItemCategory.m */,
+				FCCB873C147240190016F26D /* Like.h */,
+				FCCB873D147240190016F26D /* Like.m */,
+				FCCB873E147240190016F26D /* PaginatedLikes.h */,
+				FCCB873F147240190016F26D /* PaginatedLikes.m */,
+				FCCB8740147240190016F26D /* PaginatedPosts.h */,
+				FCCB8741147240190016F26D /* PaginatedPosts.m */,
+				FCCB8742147240190016F26D /* PaginatedTopics.h */,
+				FCCB8743147240190016F26D /* PaginatedTopics.m */,
+				FCCB8744147240190016F26D /* PaginatedVisits.h */,
+				FCCB8745147240190016F26D /* PaginatedVisits.m */,
+				FCCB8746147240190016F26D /* PaginatedWallItems.h */,
+				FCCB8747147240190016F26D /* PaginatedWallItems.m */,
+				FCCB8748147240190016F26D /* ParseClient.h */,
+				FCCB8749147240190016F26D /* ParseClient.m */,
+				FCCB874A147240190016F26D /* ParseObject.h */,
+				FCCB874B147240190016F26D /* ParseObject.m */,
+				FCCB874C147240190016F26D /* Post.h */,
+				FCCB874D147240190016F26D /* Post.m */,
+				FCCB874E147240190016F26D /* RoomItem.h */,
+				FCCB874F147240190016F26D /* RoomItem.m */,
+				FCCB8750147240190016F26D /* Score.h */,
+				FCCB8751147240190016F26D /* Score.m */,
+				FCCB8752147240190016F26D /* Topic.h */,
+				FCCB8753147240190016F26D /* Topic.m */,
+				FCCB8754147240190016F26D /* Visit.h */,
+				FCCB8755147240190016F26D /* Visit.m */,
+				FCCB8756147240190016F26D /* WallItem.h */,
+				FCCB8757147240190016F26D /* WallItem.m */,
+			);
+			path = ParseWrappers;
+			sourceTree = "<group>";
+		};
+		FCCB8758147240190016F26D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB8759147240190016F26D /* ActionsViewController.h */,
+				FCCB875A147240190016F26D /* ActionsViewController.m */,
+				FCCB875B147240190016F26D /* AddFriendViewController.h */,
+				FCCB875C147240190016F26D /* AddFriendViewController.m */,
+				FCCB875D147240190016F26D /* AvatarSelectorViewController.h */,
+				FCCB875E147240190016F26D /* AvatarSelectorViewController.m */,
+				FCCB875F147240190016F26D /* ChangeMeViewController.h */,
+				FCCB8760147240190016F26D /* ChangeMeViewController.m */,
+				FCCB8761147240190016F26D /* ChatViewController.h */,
+				FCCB8762147240190016F26D /* ChatViewController.m */,
+				FCCB8763147240190016F26D /* CommunityViewController.h */,
+				FCCB8764147240190016F26D /* CommunityViewController.m */,
+				FCCB8765147240190016F26D /* DecorateMenuViewController.h */,
+				FCCB8766147240190016F26D /* DecorateMenuViewController.m */,
+				FCCB8767147240190016F26D /* DrawerViewController.h */,
+				FCCB8768147240190016F26D /* DrawerViewController.m */,
+				FCCB8769147240190016F26D /* ForumRulesViewController.h */,
+				FCCB876A147240190016F26D /* ForumRulesViewController.m */,
+				FCCB876B147240190016F26D /* FriendsListViewController.h */,
+				FCCB876C147240190016F26D /* FriendsListViewController.m */,
+				FCCB876D147240190016F26D /* FriendsMenuViewController.h */,
+				FCCB876E147240190016F26D /* FriendsMenuViewController.m */,
+				FCCB876F147240190016F26D /* FriendViewController.h */,
+				FCCB8770147240190016F26D /* FriendViewController.m */,
+				FCCB8771147240190016F26D /* FriendWallViewController.h */,
+				FCCB8772147240190016F26D /* FriendWallViewController.m */,
+				FCCB8773147240190016F26D /* GamesViewController.h */,
+				FCCB8774147240190016F26D /* GamesViewController.m */,
+				FCCB8775147240190016F26D /* InfoViewController.h */,
+				FCCB8776147240190016F26D /* InfoViewController.m */,
+				FCCB8777147240190016F26D /* InviteViewController.h */,
+				FCCB8778147240190016F26D /* InviteViewController.m */,
+				FCCB8779147240190016F26D /* ItemSelectorViewController.h */,
+				FCCB877A147240190016F26D /* ItemSelectorViewController.m */,
+				FCCB877B147240190016F26D /* MainMenuViewController.h */,
+				FCCB877C147240190016F26D /* MainMenuViewController.m */,
+				FCCB877D147240190016F26D /* MainViewController.h */,
+				FCCB877E147240190016F26D /* MainViewController.m */,
+				FCCB877F147240190016F26D /* MenuViewController.h */,
+				FCCB8780147240190016F26D /* MenuViewController.m */,
+				FCCB8781147240190016F26D /* MyStatusViewController.h */,
+				FCCB8782147240190016F26D /* MyStatusViewController.m */,
+				FCCB8783147240190016F26D /* NeighborMenuViewController.h */,
+				FCCB8784147240190016F26D /* NeighborMenuViewController.m */,
+				FCCB8785147240190016F26D /* NeighborViewController.h */,
+				FCCB8786147240190016F26D /* NeighborViewController.m */,
+				FCCB8787147240190016F26D /* PickerBase.h */,
+				FCCB8788147240190016F26D /* PickerBase.m */,
+				FCCB8789147240190016F26D /* PickerBody.h */,
+				FCCB878A147240190016F26D /* PickerBody.m */,
+				FCCB878B147240190016F26D /* PickerClothes.h */,
+				FCCB878C147240190016F26D /* PickerClothes.m */,
+				FCCB878D147240190016F26D /* PostsViewController.h */,
+				FCCB878E147240190016F26D /* PostsViewController.m */,
+				FCCB878F147240190016F26D /* RecentLikesViewController.h */,
+				FCCB8790147240190016F26D /* RecentLikesViewController.m */,
+				FCCB8791147240190016F26D /* RecentVisitsViewController.h */,
+				FCCB8792147240190016F26D /* RecentVisitsViewController.m */,
+				FCCB8793147240190016F26D /* RegisterViewController.h */,
+				FCCB8794147240190016F26D /* RegisterViewController.m */,
+				FCCB8795147240190016F26D /* RoomSelectorViewController.h */,
+				FCCB8796147240190016F26D /* RoomSelectorViewController.m */,
+				FCCB8797147240190016F26D /* RoomViewController.h */,
+				FCCB8798147240190016F26D /* RoomViewController.m */,
+				FCCB8799147240190016F26D /* SimpleExecutingViewController.h */,
+				FCCB879A147240190016F26D /* SimpleExecutingViewController.m */,
+				FCCB879B147240190016F26D /* StartViewController.h */,
+				FCCB879C147240190016F26D /* StartViewController.m */,
+				FCCB879D147240190016F26D /* StoreItemsViewController.h */,
+				FCCB879E147240190016F26D /* StoreItemsViewController.m */,
+				FCCB879F147240190016F26D /* StoreViewController.h */,
+				FCCB87A0147240190016F26D /* StoreViewController.m */,
+				FCCB87A1147240190016F26D /* TickerViewController.h */,
+				FCCB87A2147240190016F26D /* TickerViewController.m */,
+				FCCB87A3147240190016F26D /* TopicsViewController.h */,
+				FCCB87A4147240190016F26D /* TopicsViewController.m */,
+				FCCB87A5147240190016F26D /* WallViewController.h */,
+				FCCB87A6147240190016F26D /* WallViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C215B7421033A893007C3C2C /* Pixel Things */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C215B7491033A894007C3C2C /* Build configuration list for PBXNativeTarget "Pixel Things" */;
+			buildPhases = (
+				C215B73F1033A893007C3C2C /* Resources */,
+				C215B7401033A893007C3C2C /* Sources */,
+				C215B7411033A893007C3C2C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pixel Things";
+			productName = Home;
+			productReference = FCEC0B541372566A00F4857B /* Pixel Things.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C215B7261033A827007C3C2C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C215B7291033A827007C3C2C /* Build configuration list for PBXProject "PixelThings" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = C215B7241033A827007C3C2C;
+			productRefGroup = C215B7441033A893007C3C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C215B7421033A893007C3C2C /* Pixel Things */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C215B73F1033A893007C3C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27758231034A25400A76042 /* Default.png in Resources */,
+				C27758241034A25400A76042 /* Fortunes.plist in Resources */,
+				C27758261034A25400A76042 /* Icon.png in Resources */,
+				C277584A1034A25400A76042 /* ui_add.png in Resources */,
+				C277584B1034A25400A76042 /* ui_addfromroom.png in Resources */,
+				C277584D1034A25400A76042 /* ui_back.png in Resources */,
+				C277584F1034A25400A76042 /* ui_backtab.png in Resources */,
+				C27758521034A25400A76042 /* ui_community.png in Resources */,
+				C27758531034A25400A76042 /* ui_del.png in Resources */,
+				C27758571034A25400A76042 /* ui_forum.png in Resources */,
+				C27758581034A25400A76042 /* ui_forumadd.png in Resources */,
+				C27758591034A25400A76042 /* ui_forumback.png in Resources */,
+				C277585A1034A25400A76042 /* ui_forumloadmore.png in Resources */,
+				C277585B1034A25400A76042 /* ui_forummessageclose.png in Resources */,
+				C277585C1034A25400A76042 /* ui_forumnewtopic.png in Resources */,
+				C277585D1034A25400A76042 /* ui_forumreload.png in Resources */,
+				C277585E1034A25400A76042 /* ui_forumrules.png in Resources */,
+				C277585F1034A25400A76042 /* ui_forumrulesbutton.png in Resources */,
+				C27758601034A25400A76042 /* ui_friends.png in Resources */,
+				C27758691034A25400A76042 /* ui_invite.png in Resources */,
+				C277586A1034A25400A76042 /* ui_invitemenubutton.png in Resources */,
+				C277586B1034A25400A76042 /* ui_like.png in Resources */,
+				C277586C1034A25400A76042 /* ui_login.png in Resources */,
+				C277586D1034A25400A76042 /* ui_logo.png in Resources */,
+				C277586F1034A25400A76042 /* ui_menubg.png in Resources */,
+				C27758701034A25400A76042 /* ui_message.png in Resources */,
+				C27758721034A25400A76042 /* ui_myhome.png in Resources */,
+				C27758731034A25400A76042 /* ui_myhomeback.png in Resources */,
+				C27758741034A25400A76042 /* ui_myhomebg.png in Resources */,
+				C27758771034A25400A76042 /* ui_neighbormenubg.png in Resources */,
+				C27758781034A25400A76042 /* ui_neighbors.png in Resources */,
+				C277587B1034A25400A76042 /* ui_random.png in Resources */,
+				C277587D1034A25400A76042 /* ui_registration.png in Resources */,
+				C277587E1034A25400A76042 /* ui_saveroom.png in Resources */,
+				C277587F1034A25400A76042 /* ui_scrollerback.png in Resources */,
+				C27758801034A25400A76042 /* ui_scrollerforward.png in Resources */,
+				C27758811034A25400A76042 /* ui_showhidemenu.png in Resources */,
+				C27758881034A25400A76042 /* ui_statusbg.png in Resources */,
+				C277588A1034A25400A76042 /* ui_store.png in Resources */,
+				C27758901034A25400A76042 /* ui_tab.png in Resources */,
+				C27758911034A25400A76042 /* ui_useroffline.png in Resources */,
+				C27758921034A25400A76042 /* ui_useronline.png in Resources */,
+				C27758931034A25400A76042 /* ui_wall.png in Resources */,
+				C27758951034A25400A76042 /* ui_wallitems.png in Resources */,
+				00C68C5D105B06640024FF72 /* Entitlements.plist in Resources */,
+				D6B195A4107D3C3900B98EDB /* ui_friendspressed.png in Resources */,
+				D6B19605107D489F00B98EDB /* ui_addpressed.png in Resources */,
+				D6B19606107D489F00B98EDB /* ui_chat.png in Resources */,
+				D6B19607107D489F00B98EDB /* ui_chatpressed.png in Resources */,
+				D6B19608107D489F00B98EDB /* ui_forumpressed.png in Resources */,
+				D6B19609107D489F00B98EDB /* ui_invitepressed.png in Resources */,
+				D6B1960A107D489F00B98EDB /* ui_neighborspressed.png in Resources */,
+				FCDAF78A1374FE6B00737146 /* ui_pickerbottom.png in Resources */,
+				FCDAF78F1374FEF500737146 /* ui_pickerleft.png in Resources */,
+				FCDAF7971374FFB100737146 /* ui_next.png in Resources */,
+				FCDAF79F1375005000737146 /* ui_pickertop.png in Resources */,
+				FCDAF7A71375009C00737146 /* ui_pickerside.png in Resources */,
+				FCDAF7B4137503CE00737146 /* ui_world.png in Resources */,
+				FCC3213D137558EA007B27E0 /* ui_blank.png in Resources */,
+				FC7C3B0614723ED8007688D8 /* ActionsViewController.xib in Resources */,
+				FC7C3B0714723ED8007688D8 /* AddFriendViewController.xib in Resources */,
+				FC7C3B0814723ED8007688D8 /* AvatarSelectorViewController.xib in Resources */,
+				FC7C3B0914723ED8007688D8 /* ChangeMeViewController.xib in Resources */,
+				FC7C3B0A14723ED8007688D8 /* ChatViewController.xib in Resources */,
+				FC7C3B0B14723ED8007688D8 /* CommunityViewController.xib in Resources */,
+				FC7C3B0C14723ED8007688D8 /* DecorateMenuViewController.xib in Resources */,
+				FC7C3B0D14723ED8007688D8 /* ForumRulesViewController.xib in Resources */,
+				FC7C3B0E14723ED8007688D8 /* FriendsListViewController.xib in Resources */,
+				FC7C3B0F14723ED8007688D8 /* FriendsMenuViewController.xib in Resources */,
+				FC7C3B1014723ED8007688D8 /* FriendViewController.xib in Resources */,
+				FC7C3B1114723ED8007688D8 /* FriendWallViewController.xib in Resources */,
+				FC7C3B1214723ED8007688D8 /* GamesViewController.xib in Resources */,
+				FC7C3B1314723ED8007688D8 /* InfoViewController.xib in Resources */,
+				FC7C3B1414723ED8007688D8 /* InviteViewController.xib in Resources */,
+				FC7C3B1514723ED8007688D8 /* ItemSelectorViewController.xib in Resources */,
+				FC7C3B1614723ED8007688D8 /* LoginController.xib in Resources */,
+				FC7C3B1714723ED8007688D8 /* MainMenuViewController.xib in Resources */,
+				FC7C3B1814723ED8007688D8 /* MainWindow.xib in Resources */,
+				FC7C3B1914723ED8007688D8 /* MyStatusViewController.xib in Resources */,
+				FC7C3B1A14723ED8007688D8 /* NeighborMenuViewController.xib in Resources */,
+				FC7C3B1B14723ED8007688D8 /* NeighborViewController.xib in Resources */,
+				FC7C3B1C14723ED8007688D8 /* PickerBody.xib in Resources */,
+				FC7C3B1D14723ED8007688D8 /* PickerClothes.xib in Resources */,
+				FC7C3B1E14723ED8007688D8 /* PostsViewController.xib in Resources */,
+				FC7C3B1F14723ED8007688D8 /* RegisterViewController.xib in Resources */,
+				FC7C3B2014723ED8007688D8 /* RoomSelectorViewController.xib in Resources */,
+				FC7C3B2114723ED8007688D8 /* RoomViewController.xib in Resources */,
+				FC7C3B2214723ED8007688D8 /* StoreItemsViewController.xib in Resources */,
+				FC7C3B2314723ED8007688D8 /* StoreViewController.xib in Resources */,
+				FC7C3B2414723ED8007688D8 /* TopicsViewController.xib in Resources */,
+				FC7C3B2514723ED8007688D8 /* WallViewController.xib in Resources */,
+				FCCB87AA147240190016F26D /* AnimationSystem.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C215B7401033A893007C3C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27757991034A09E00A76042 /* main.m in Sources */,
+				FCCB87A7147240190016F26D /* AnimatedObject.m in Sources */,
+				FCCB87A8147240190016F26D /* AnimatedPerson.m in Sources */,
+				FCCB87A9147240190016F26D /* AnimationSystem.m in Sources */,
+				FCCB87AB147240190016F26D /* ClickableView.m in Sources */,
+				FCCB87AC147240190016F26D /* PointObject.m in Sources */,
+				FCCB87AD147240190016F26D /* StatusBubble.m in Sources */,
+				FCCB87AE147240190016F26D /* AppDelegate.m in Sources */,
+				FCCB87AF147240190016F26D /* Fortunes.m in Sources */,
+				FCCB87B0147240190016F26D /* Item.m in Sources */,
+				FCCB87B1147240190016F26D /* ItemSelectorScrollView.m in Sources */,
+				FCCB87B2147240190016F26D /* LoginController.m in Sources */,
+				FCCB87B3147240190016F26D /* NSDataAdditions.m in Sources */,
+				FCCB87B4147240190016F26D /* NSDataHashing.m in Sources */,
+				FCCB87B5147240190016F26D /* NSDateAdditions.m in Sources */,
+				FCCB87B6147240190016F26D /* NSStringAdditions.m in Sources */,
+				FCCB87B7147240190016F26D /* SaveWallMessage.m in Sources */,
+				FCCB87B8147240190016F26D /* AddFriendOperation.m in Sources */,
+				FCCB87B9147240190016F26D /* AuthenticateOperation.m in Sources */,
+				FCCB87BA147240190016F26D /* CheckReachabilityOperation.m in Sources */,
+				FCCB87BB147240190016F26D /* DoCharacterAnimationOperation.m in Sources */,
+				FCCB87BC147240190016F26D /* FetchAvatarOperation.m in Sources */,
+				FCCB87BD147240190016F26D /* FetchCategoriesOperation.m in Sources */,
+				FCCB87BE147240190016F26D /* FetchCharacterOperation.m in Sources */,
+				FCCB87BF147240190016F26D /* FetchExternalAppsOperation.m in Sources */,
+				FCCB87C0147240190016F26D /* FetchForumsOperation.m in Sources */,
+				FCCB87C1147240190016F26D /* FetchFriendsOperation.m in Sources */,
+				FCCB87C2147240190016F26D /* FetchFriendsRoomOperation.m in Sources */,
+				FCCB87C3147240190016F26D /* FetchImagesOperation.m in Sources */,
+				FCCB87C4147240190016F26D /* FetchMyRoomOperation.m in Sources */,
+				FCCB87C5147240190016F26D /* FetchPostsOperation.m in Sources */,
+				FCCB87C6147240190016F26D /* FetchPurchasedItemsOperation.m in Sources */,
+				FCCB87C7147240190016F26D /* FetchRandomFriendsRoomOperation.m in Sources */,
+				FCCB87C8147240190016F26D /* FetchRecentLikesOperation.m in Sources */,
+				FCCB87C9147240190016F26D /* FetchRecentVisitsOperation.m in Sources */,
+				FCCB87CA147240190016F26D /* FetchRecentWallItemsOperation.m in Sources */,
+				FCCB87CB147240190016F26D /* FetchScoreOperation.m in Sources */,
+				FCCB87CC147240190016F26D /* FetchTopicsOperation.m in Sources */,
+				FCCB87CD147240190016F26D /* GetImageUrlOperation.m in Sources */,
+				FCCB87CE147240190016F26D /* GetStoreItemsOperation.m in Sources */,
+				FCCB87CF147240190016F26D /* InteractWithFriendOperation.m in Sources */,
+				FCCB87D0147240190016F26D /* LikeRoomOperation.m in Sources */,
+				FCCB87D1147240190016F26D /* Operation.m in Sources */,
+				FCCB87D2147240190016F26D /* OperationsManager.m in Sources */,
+				FCCB87D3147240190016F26D /* PurchaseItemOperation.m in Sources */,
+				FCCB87D4147240190016F26D /* RegisterAccountOperation.m in Sources */,
+				FCCB87D5147240190016F26D /* RemoveFriendOperation.m in Sources */,
+				FCCB87D6147240190016F26D /* SaveAvatarOperation.m in Sources */,
+				FCCB87D7147240190016F26D /* SavePostOperation.m in Sources */,
+				FCCB87D8147240190016F26D /* SaveRoomOperation.m in Sources */,
+				FCCB87D9147240190016F26D /* SaveToPhotoAlbumOperation.m in Sources */,
+				FCCB87DA147240190016F26D /* SaveTopicOperation.m in Sources */,
+				FCCB87DB147240190016F26D /* SendInviteOperation.m in Sources */,
+				FCCB87DC147240190016F26D /* SimpleOperation.m in Sources */,
+				FCCB87DD147240190016F26D /* UpdateStatusOperation.m in Sources */,
+				FCCB87DE147240190016F26D /* Avatar.m in Sources */,
+				FCCB87DF147240190016F26D /* Character.m in Sources */,
+				FCCB87E0147240190016F26D /* Forum.m in Sources */,
+				FCCB87E1147240190016F26D /* Friend.m in Sources */,
+				FCCB87E2147240190016F26D /* FunItem.m in Sources */,
+				FCCB87E3147240190016F26D /* ItemCategory.m in Sources */,
+				FCCB87E4147240190016F26D /* Like.m in Sources */,
+				FCCB87E5147240190016F26D /* PaginatedLikes.m in Sources */,
+				FCCB87E6147240190016F26D /* PaginatedPosts.m in Sources */,
+				FCCB87E7147240190016F26D /* PaginatedTopics.m in Sources */,
+				FCCB87E8147240190016F26D /* PaginatedVisits.m in Sources */,
+				FCCB87E9147240190016F26D /* PaginatedWallItems.m in Sources */,
+				FCCB87EA147240190016F26D /* ParseClient.m in Sources */,
+				FCCB87EB147240190016F26D /* ParseObject.m in Sources */,
+				FCCB87EC147240190016F26D /* Post.m in Sources */,
+				FCCB87ED147240190016F26D /* RoomItem.m in Sources */,
+				FCCB87EE147240190016F26D /* Score.m in Sources */,
+				FCCB87EF147240190016F26D /* Topic.m in Sources */,
+				FCCB87F0147240190016F26D /* Visit.m in Sources */,
+				FCCB87F1147240190016F26D /* WallItem.m in Sources */,
+				FCCB87F2147240190016F26D /* ActionsViewController.m in Sources */,
+				FCCB87F3147240190016F26D /* AddFriendViewController.m in Sources */,
+				FCCB87F4147240190016F26D /* AvatarSelectorViewController.m in Sources */,
+				FCCB87F5147240190016F26D /* ChangeMeViewController.m in Sources */,
+				FCCB87F6147240190016F26D /* ChatViewController.m in Sources */,
+				FCCB87F7147240190016F26D /* CommunityViewController.m in Sources */,
+				FCCB87F8147240190016F26D /* DecorateMenuViewController.m in Sources */,
+				FCCB87F9147240190016F26D /* DrawerViewController.m in Sources */,
+				FCCB87FA147240190016F26D /* ForumRulesViewController.m in Sources */,
+				FCCB87FB147240190016F26D /* FriendsListViewController.m in Sources */,
+				FCCB87FC147240190016F26D /* FriendsMenuViewController.m in Sources */,
+				FCCB87FD147240190016F26D /* FriendViewController.m in Sources */,
+				FCCB87FE147240190016F26D /* FriendWallViewController.m in Sources */,
+				FCCB87FF147240190016F26D /* GamesViewController.m in Sources */,
+				FCCB8800147240190016F26D /* InfoViewController.m in Sources */,
+				FCCB8801147240190016F26D /* InviteViewController.m in Sources */,
+				FCCB8802147240190016F26D /* ItemSelectorViewController.m in Sources */,
+				FCCB8803147240190016F26D /* MainMenuViewController.m in Sources */,
+				FCCB8804147240190016F26D /* MainViewController.m in Sources */,
+				FCCB8805147240190016F26D /* MenuViewController.m in Sources */,
+				FCCB8806147240190016F26D /* MyStatusViewController.m in Sources */,
+				FCCB8807147240190016F26D /* NeighborMenuViewController.m in Sources */,
+				FCCB8808147240190016F26D /* NeighborViewController.m in Sources */,
+				FCCB8809147240190016F26D /* PickerBase.m in Sources */,
+				FCCB880A147240190016F26D /* PickerBody.m in Sources */,
+				FCCB880B147240190016F26D /* PickerClothes.m in Sources */,
+				FCCB880C147240190016F26D /* PostsViewController.m in Sources */,
+				FCCB880D147240190016F26D /* RecentLikesViewController.m in Sources */,
+				FCCB880E147240190016F26D /* RecentVisitsViewController.m in Sources */,
+				FCCB880F147240190016F26D /* RegisterViewController.m in Sources */,
+				FCCB8810147240190016F26D /* RoomSelectorViewController.m in Sources */,
+				FCCB8811147240190016F26D /* RoomViewController.m in Sources */,
+				FCCB8812147240190016F26D /* SimpleExecutingViewController.m in Sources */,
+				FCCB8813147240190016F26D /* StartViewController.m in Sources */,
+				FCCB8814147240190016F26D /* StoreItemsViewController.m in Sources */,
+				FCCB8815147240190016F26D /* StoreViewController.m in Sources */,
+				FCCB8816147240190016F26D /* TickerViewController.m in Sources */,
+				FCCB8817147240190016F26D /* TopicsViewController.m in Sources */,
+				FCCB8818147240190016F26D /* WallViewController.m in Sources */,
+				FC53E2B314724BD400153A8B /* ViewableRoomItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000A03B21059F7270013F545 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = NO;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PFE_FILE_C_DIALECTS = "c objective-c c++ objective-c++";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Home/Classes\"",
+					"\"$(SRCROOT)/Home/Classes/ParseWrappers\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				SDKROOT = iphoneos4.3;
+			};
+			name = "Ad Hoc";
+		};
+		000A03B31059F7270013F545 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Home\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
+				INFOPLIST_FILE = "Home/Home-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OBJC_PRINT_REPLACED_METHODS = YES;
+				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Pixel Things";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.3;
+				ZERO_LINK = NO;
+			};
+			name = "Ad Hoc";
+		};
+		00B4EF8C103F9EE400604440 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = NO;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PFE_FILE_C_DIALECTS = "c objective-c c++ objective-c++";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Home/Classes\"",
+					"\"$(SRCROOT)/Home/Classes/ParseWrappers\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.3;
+			};
+			name = Distribution;
+		};
+		00B4EF8D103F9EE400604440 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Home\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
+				INFOPLIST_FILE = "Home/Home-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OBJC_PRINT_REPLACED_METHODS = YES;
+				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Pixel Things";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.3;
+				ZERO_LINK = NO;
+			};
+			name = Distribution;
+		};
+		C215B7271033A827007C3C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = NO;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PFE_FILE_C_DIALECTS = "c objective-c c++ objective-c++";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Home/Classes\"",
+					"\"$(SRCROOT)/Home/Classes/ParseWrappers\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos4.3;
+			};
+			name = Debug;
+		};
+		C215B7281033A827007C3C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = NO;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PFE_FILE_C_DIALECTS = "c objective-c c++ objective-c++";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Home/Classes\"",
+					"\"$(SRCROOT)/Home/Classes/ParseWrappers\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				SDKROOT = iphoneos4.3;
+			};
+			name = Release;
+		};
+		C215B7471033A894007C3C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Home\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
+				INFOPLIST_FILE = "Home/Home-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OBJC_PRINT_REPLACED_METHODS = YES;
+				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Pixel Things";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.3;
+			};
+			name = Debug;
+		};
+		C215B7481033A894007C3C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Home\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
+				INFOPLIST_FILE = "Home/Home-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OBJC_PRINT_REPLACED_METHODS = YES;
+				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Pixel Things";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.3;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C215B7291033A827007C3C2C /* Build configuration list for PBXProject "PixelThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C215B7271033A827007C3C2C /* Debug */,
+				C215B7281033A827007C3C2C /* Release */,
+				000A03B21059F7270013F545 /* Ad Hoc */,
+				00B4EF8C103F9EE400604440 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C215B7491033A894007C3C2C /* Build configuration list for PBXNativeTarget "Pixel Things" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C215B7471033A894007C3C2C /* Debug */,
+				C215B7481033A894007C3C2C /* Release */,
+				000A03B31059F7270013F545 /* Ad Hoc */,
+				00B4EF8D103F9EE400604440 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C215B7261033A827007C3C2C /* Project object */;
+}
