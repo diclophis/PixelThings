@@ -3,11 +3,11 @@
 @interface Post : ParseObject {
 }
 
-- (int32_t) id;
+- (NSString *) uid;
 
-- (int32_t) topicId;
+- (NSString *) topicId;
 
-- (int32_t) forumId;
+- (NSString *) forumId;
 
 - (NSString *) username;
 

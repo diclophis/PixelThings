@@ -80,10 +80,12 @@
 
 
 - (BOOL) removeFriend: (NSString *) username : (NSString *) friendUsername {
+  return NO;
 }
 
 
 - (BOOL) updateStatus: (NSString *) username : (NSString *) status {
+  return NO;
 }
 
 
@@ -143,10 +145,12 @@
 
 
 - (BOOL) sendInvite: (NSString *) username : (NSString *) email : (NSString *) message {
+  return NO;
 }
 
 
 - (BOOL) saveCharacter: (NSString *) username : (Character *) bodyParts {
+  return NO;
 }
 
 
@@ -195,14 +199,17 @@
 
 
 - (BOOL) saveProfile: (NSString *) username : (NSString *) deviceId : (NSString *) facebookUserId {
+  return NO;
 }
 
 
 - (BOOL) likeRoom: (NSString *) username : (NSString *) friendUsername {
+  return NO;
 }
 
 
 - (BOOL) visitRoom: (NSString *) username : (NSString *) friendUsername {
+  return NO;
 }
 
 
@@ -231,29 +238,33 @@
 }
 
 
-- (PaginatedTopics *) fetchTopics: (int32_t) forumId : (int32_t) page {
+- (PaginatedTopics *) fetchTopics: (NSString *) forumId : (int32_t) page {
   @throw [NSException exceptionWithName:@"fetchTopics not implemented" reason:nil userInfo:nil];
 }
 
 
-- (BOOL) saveTopic: (NSString *) username : (int32_t) forumId : (NSString *) title {
+- (BOOL) saveTopic: (NSString *) username : (NSString *) forumId : (NSString *) title {
+  return NO;
 }
 
 
-- (PaginatedPosts *) fetchPosts: (int32_t) topicId : (int32_t) page {
+- (PaginatedPosts *) fetchPosts: (NSString *) topicId : (int32_t) page {
   @throw [NSException exceptionWithName:@"fetchRoom not implemented" reason:nil userInfo:nil];
 }
 
 
-- (BOOL) savePost: (NSString *) username : (int32_t) topicId : (NSString *) body {
+- (BOOL) savePost: (NSString *) username : (NSString *) topicId : (NSString *) body {
+  return NO;
 }
 
 
 - (int32_t) getPoints: (NSString *) username {
+  return 0;
 }
 
 
 - (NSString *) getImageUrl: (NSString *) name {
+  @throw [NSException exceptionWithName:@"getImageUrl not implemented" reason:nil userInfo:nil];
 }
 
 
@@ -263,17 +274,19 @@
 
 
 - (BOOL) saveWallMessage: (NSString *) username : (NSString *) friendUsername : (NSString *) message {
+  return NO;
 }
 
 
 - (BOOL) saveScreenshot: (NSString *) username : (NSArray *) bytes {
+  return NO;
 }
 
 
-- (NSArray *) getStoreItems: (int32_t) categoryId {
+- (NSArray *) getStoreItems: (NSString *) categoryId {
   NSError *error;
   PFQuery *funItemQuery = [PFQuery queryWithClassName:@"FunItem"];
-  [funItemQuery whereKey:@"itemCategoryId" equalTo:[NSNumber numberWithInt:categoryId]];
+  [funItemQuery whereKey:@"itemCategoryId" equalTo:categoryId];
   NSArray *funItems = [funItemQuery findObjects:&error];
   if (funItems) {
     NSLog(@"found items");
@@ -308,11 +321,13 @@
 }
 
 
-- (BOOL) purchaseItem: (NSString *) username : (int32_t) itemId : (int32_t) quantity {
+- (BOOL) purchaseItem: (NSString *) username : (NSString *) itemId : (int32_t) quantity {
+  return NO;
 }
 
 
 - (NSArray *) getInventoryItems: (NSString *) username {
+  @throw [NSException exceptionWithName:@"getInventoryItems not implemented" reason:nil userInfo:nil];
 }
 
 
@@ -322,31 +337,32 @@
 
 
 - (NSArray *) getSkeletonPieceList: (NSString *) skeletonName : (NSString *) pieceName {
+  @throw [NSException exceptionWithName:@"getSkeletonPieceList not implemented" reason:nil userInfo:nil];
 }
 
 
 - (BOOL) saveAvatarScreenshot: (NSString *) username : (NSArray *) bytes {
+  return NO;
 }
 
 
 - (BOOL) saveAvatarMessage: (NSString *) username : (NSString *) email : (NSString *) message {
-}
-
-
-- (BOOL) loginToFunjiStore: (NSString *) username {
+  return NO;
 }
 
 
 - (NSArray *) getInventoryAvatarItems: (NSString *) skeletonName : (NSString *) pieceName {
+  @throw [NSException exceptionWithName:@"getInventoryAvatarItems not implemented" reason:nil userInfo:nil];
 }
 
 
 - (NSArray *) fetchExternalApps: (NSString *) username {
-  return nil;
+  @throw [NSException exceptionWithName:@"getInventoryAvatarItems not implemented" reason:nil userInfo:nil];
 }
 
 
 - (BOOL) interactWithFriend: (NSString *) username : (NSString *) friendUsername : (NSString *) interaction {
+  return NO;
 }
 
 

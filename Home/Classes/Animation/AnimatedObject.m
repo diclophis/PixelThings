@@ -123,7 +123,7 @@
 	//NSString *defaultImageName = [AnimationSystem formatAvatarImageNameForCharacter:characterName andSkeletonPiece:skeletonPiece andAnimationName:defaultAnimation andFrame:0];
 	Item *item;
 	item = [[[Item alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.frame.size.width, self.frame.size.height)] autorelease];
-	[item setItemId:1 andFilename:skeletonPiece andVariations:1 andFrames:1 andConstrained:NO andCurrentVariation:0];
+	[item setItemId:@"1" andFilename:skeletonPiece andVariations:1 andFrames:1 andConstrained:NO andCurrentVariation:0];
 	return item;
 }
 

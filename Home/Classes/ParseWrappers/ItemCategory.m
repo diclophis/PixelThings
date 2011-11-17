@@ -9,8 +9,8 @@
 @implementation ItemCategory
 
 
-- (int32_t) id {
-  return [[sourceObject objectForKey:@"integer_id"] intValue];
+- (NSString *) uid {
+  return [sourceObject objectId];
 }
 
 

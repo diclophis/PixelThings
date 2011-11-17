@@ -3,8 +3,8 @@
 @interface FunItem : ParseObject {
 }
 
-- (int32_t) id;
-- (int32_t) itemCategoryId;
+- (NSString *) uid;
+- (NSString *) itemCategoryId;
 - (NSString *) name;
 - (NSString *) filename;
 - (int32_t) variations;

@@ -16,7 +16,7 @@
 @synthesize pager;
 
 
--(id)initWithTopicId:(NSInteger)theTopicId andPage:(NSInteger)thePage {
+-(id)initWithTopicId:(NSString *)theTopicId andPage:(NSInteger)thePage {
 	if ((self = [super init])) {
 		[self setTopicId:theTopicId];
 		[self setPage:thePage];
@@ -26,6 +26,7 @@
 
 
 -(void)dealloc {
+  [topicId release];
 	[pager release];
 	[super dealloc];
 }

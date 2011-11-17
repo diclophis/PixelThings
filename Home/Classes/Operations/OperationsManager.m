@@ -278,7 +278,7 @@ static OperationsManager *operationsManagerInstance = NULL;
 }
 
 
--(void)fetchTopics:(NSInteger)forumId forPage:(NSInteger)page {
+-(void)fetchTopics:(NSString *)forumId forPage:(NSInteger)page {
 	FetchTopicsOperation *fetchTopics = [[FetchTopicsOperation alloc] initWithForumId:forumId andPage:page];
 	[fetchTopics addObserver:self forKeyPath:@"isFinished" options:NSKeyValueObservingOptionNew context:nil];
 	[queue addOperation:fetchTopics];
@@ -286,7 +286,7 @@ static OperationsManager *operationsManagerInstance = NULL;
 }
 
 
--(void)saveTopicInForum:(NSInteger)forumId withTitle:(NSString *)title {
+-(void)saveTopicInForum:(NSString *)forumId withTitle:(NSString *)title {
 	SaveTopicOperation *saveTopic = [[SaveTopicOperation alloc] initWithForumId:forumId andTitle:title];
 	[saveTopic addObserver:self forKeyPath:@"isFinished" options:NSKeyValueObservingOptionNew context:nil];
 	[queue addOperation:saveTopic];
@@ -294,7 +294,7 @@ static OperationsManager *operationsManagerInstance = NULL;
 }
 
 
--(void)fetchPosts:(NSInteger)topicId forPage:(NSInteger)page {
+-(void)fetchPosts:(NSString *)topicId forPage:(NSInteger)page {
 	FetchPostsOperation *fetchPosts = [[FetchPostsOperation alloc] initWithTopicId:topicId andPage:page];
 	[fetchPosts addObserver:self forKeyPath:@"isFinished" options:NSKeyValueObservingOptionNew context:nil];
 	[queue addOperation:fetchPosts];
@@ -302,7 +302,7 @@ static OperationsManager *operationsManagerInstance = NULL;
 }
 
 
--(void)savePostInTopic:(NSInteger)topicId withBody:(NSString *)body {
+-(void)savePostInTopic:(NSString *)topicId withBody:(NSString *)body {
 	SavePostOperation *savePost = [[SavePostOperation alloc] initWithTopicId:topicId andBody:body];
 	[savePost addObserver:self forKeyPath:@"isFinished" options:NSKeyValueObservingOptionNew context:nil];
 	[savePost addObserver:self forKeyPath:@"isExecuting" options:NSKeyValueObservingOptionNew context:nil];
@@ -766,7 +766,7 @@ static OperationsManager *operationsManagerInstance = NULL;
 }	
 
 
--(void)fetchItemsForCategory:(NSInteger)categoryId {
+-(void)fetchItemsForCategory:(NSString *)categoryId {
 	GetStoreItemsOperation *operation = [[GetStoreItemsOperation alloc] initWithCategoryId:categoryId];
 	[operation addObserver:self forKeyPath:@"isFinished" options:NSKeyValueObservingOptionNew context:nil];
 	[queue addOperation:operation];

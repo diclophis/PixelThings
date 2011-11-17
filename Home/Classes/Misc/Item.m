@@ -164,14 +164,14 @@ static ItemManager *itemManagerInstance = NULL;
 }
 
 
--(id)initWithItemId:(NSInteger)theItemId andFilename:(NSString *)theFilename andVariations:(NSInteger)theVariations andFrames:(NSInteger)theFrames andConstrained:(BOOL)theConstrained andCurrentVariation:(NSInteger)theCurrentVariation {
+-(id)initWithItemId:(NSString *)theItemId andFilename:(NSString *)theFilename andVariations:(NSInteger)theVariations andFrames:(NSInteger)theFrames andConstrained:(BOOL)theConstrained andCurrentVariation:(NSInteger)theCurrentVariation {
 	if ((self = [super init])) {
 		[self setItemId:theItemId andFilename:theFilename andVariations:theVariations andFrames:theFrames andConstrained:theConstrained andCurrentVariation:theCurrentVariation];
 	}
 	return self;
 }
 
--(void)setItemId:(NSInteger)theItemId andFilename:(NSString *)theFilename andVariations:(NSInteger)theVariations andFrames:(NSInteger)theFrames andConstrained:(BOOL)theConstrained andCurrentVariation:(NSInteger)theCurrentVariation {	
+-(void)setItemId:(NSString *)theItemId andFilename:(NSString *)theFilename andVariations:(NSInteger)theVariations andFrames:(NSInteger)theFrames andConstrained:(BOOL)theConstrained andCurrentVariation:(NSInteger)theCurrentVariation {	
 	[self setAnimationDuration:ANIMATION_DURATION * 25.0];
 	[self setItemId:theItemId];
 	[self setVariations:theVariations];

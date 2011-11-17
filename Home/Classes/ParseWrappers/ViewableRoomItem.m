@@ -24,7 +24,7 @@
 }
 
 
-- (int32_t) itemId {
+- (NSString *) itemId {
 }
 
 

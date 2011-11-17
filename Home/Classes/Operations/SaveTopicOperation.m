@@ -1,5 +1,9 @@
 // GPL
 
+
+#import "Parse/Parse.h"
+#import "ParseObject.h"
+#import "ParseClient.h"
 #import "SaveTopicOperation.h"
 
 
@@ -10,7 +14,7 @@
 @synthesize forumId;
 
 
--(id)initWithForumId:(NSInteger)theForumId andTitle:(NSString *)theTitle {
+-(id)initWithForumId:(NSString *)theForumId andTitle:(NSString *)theTitle {
 	if ((self = [super init])) {
 		[self setTitle:theTitle];
 		[self setForumId:theForumId];
@@ -20,6 +24,7 @@
 
 
 -(void)dealloc {
+  [forumId release];
 	[title release];
 	[super dealloc];
 }
@@ -28,18 +33,12 @@
 -(void)main {	
 	@try {
 		if ([self connect]) {
-			//[self setSuccess:[client saveTopic:username :forumId :title]];
+			[self setSuccess:[client saveTopic:username :forumId :title]];
 		}
 	}
 	
 	@catch (id theException) {
-    /*
-		if ([theException isKindOfClass:[RecordInvalid class]]) {
-			[self setErrorMessage:[theException message]];
-		} else {
-			[self setErrorMessage:@"There was an error saving topic, please try again"];
-		}
-    */
+	  [self setErrorMessage:@"There was an error saving topic, please try again"];
 	}
 }
 

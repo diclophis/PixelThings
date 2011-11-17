@@ -5,7 +5,7 @@
 }
 
 
-- (int32_t) id;
+- (NSString *) uid;
 - (NSString *) name;
 - (NSString *) forumDescription;
 - (int32_t) topicsCount;

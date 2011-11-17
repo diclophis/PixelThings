@@ -37,7 +37,7 @@
 			NSArray *theThriftItems = [client fetchPurchasedItems:username :categoryDescription];	
 			for (FunItem *funItem in theThriftItems) {		
 				Item *item = [[Item alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 75.0, 75.0)];
-				[item setItemId:[funItem id] andFilename:[funItem filename] andVariations:[funItem variations] andFrames:[funItem frames] andConstrained:[funItem constrained] andCurrentVariation:0];
+				[item setItemId:[funItem uid] andFilename:[funItem filename] andVariations:[funItem variations] andFrames:[funItem frames] andConstrained:[funItem constrained] andCurrentVariation:0];
 				[items addObject:item];
 			}
 			[self setSuccess:YES];

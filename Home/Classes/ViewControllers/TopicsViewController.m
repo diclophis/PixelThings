@@ -172,7 +172,7 @@
 	[loadMoreButton setHidden:YES];
 	[refreshButton setHidden:YES];
 	[addTopicButton setHidden:YES];
-	[[OperationsManager sharedInstance] fetchTopics:[forum id] forPage:1];
+	[[OperationsManager sharedInstance] fetchTopics:[forum uid] forPage:1];
 }
 
 
@@ -190,7 +190,7 @@
 
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
-	[[OperationsManager sharedInstance] saveTopicInForum:[forum id] withTitle:[inputField text]];
+	[[OperationsManager sharedInstance] saveTopicInForum:[forum uid] withTitle:[inputField text]];
 	[inputField resignFirstResponder];
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:ANIMATION_DURATION];
@@ -240,12 +240,13 @@
 -(void)didNotSaveTopic {
 }
 
+
 -(void)loadMore:(id)sender {
 	[loadMoreButton setHidden:YES];
 	[addTopicButton setHidden:YES];
 	[refreshButton setHidden:YES];
 	[activityView startAnimating];
-	[[OperationsManager sharedInstance] fetchTopics:[forum id] forPage:[pager currentPage] + 1];
+	[[OperationsManager sharedInstance] fetchTopics:[forum uid] forPage:[pager currentPage] + 1];
 }
 
 
@@ -256,7 +257,7 @@
 	[activityView startAnimating];
 	[self setTopics:nil];
 	[tableView reloadData];
-	[[OperationsManager sharedInstance] fetchTopics:[forum id] forPage:1];
+	[[OperationsManager sharedInstance] fetchTopics:[forum uid] forPage:1];
 }
 
 

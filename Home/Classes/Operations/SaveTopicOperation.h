@@ -5,15 +5,15 @@
 
 
 @interface SaveTopicOperation : Operation {
-	NSInteger forumId;
+	NSString *forumId;
 	NSString *title;
 }
 
-@property NSInteger forumId;
+@property (retain) NSString *forumId;
 @property (retain) NSString *title;
 
 
--(id)initWithForumId:(NSInteger)theForumId andTitle:(NSString *)theTitle;
+-(id)initWithForumId:(NSString *)theForumId andTitle:(NSString *)theTitle;
 
 
 @end

@@ -9,15 +9,15 @@
 @implementation Post
 
 
-- (int32_t) id {
+- (NSString *) uid {
 }
 
 
-- (int32_t) topicId {
+- (NSString *) topicId {
 }
 
 
-- (int32_t) forumId {
+- (NSString *) forumId {
 }
 
 

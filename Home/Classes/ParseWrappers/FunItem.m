@@ -9,13 +9,13 @@
 @implementation FunItem
 
 
-- (int32_t) id {
-  return [[sourceObject objectForKey:@"integer_id"] intValue];
+- (NSString *) uid {
+  return [sourceObject objectId];
 }
 
 
-- (int32_t) itemCategoryId {
-  return [[sourceObject objectForKey:@"itemCategoryId"] intValue];
+- (NSString *) itemCategoryId {
+  return [sourceObject objectForKey:@"itemCategoryId"];
 }
 
 

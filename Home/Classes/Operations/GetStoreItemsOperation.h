@@ -6,15 +6,15 @@
 
 @interface GetStoreItemsOperation : SimpleOperation {
 	NSArray *items;
-	NSInteger categoryId;
+	NSString *categoryId;
 }
 
 
-@property NSInteger categoryId;
+@property (retain) NSString *categoryId;
 @property (retain) NSArray *items;
 
 
--(id)initWithCategoryId:(NSInteger)theCategoryId;
+-(id)initWithCategoryId:(NSString *)theCategoryId;
 
 
 @end

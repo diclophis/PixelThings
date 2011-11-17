@@ -1,5 +1,8 @@
 // GPL
 
+#import "Parse/Parse.h"
+#import "ParseObject.h"
+#import "ParseClient.h"
 #import "SavePostOperation.h"
 
 @implementation SavePostOperation
@@ -9,7 +12,7 @@
 @synthesize body;
 
 
--(id)initWithTopicId:(NSInteger)theTopicId andBody:(NSString *)theBody { 
+-(id)initWithTopicId:(NSString *)theTopicId andBody:(NSString *)theBody { 
 	if ((self = [super init])) {
 		[self setIndicatesProgress:YES];
 		[self setOperationDescription:@"Saving Post..."];
@@ -21,6 +24,7 @@
 
 
 -(void)dealloc {
+  [topicId release];
 	[body release];
 	[super dealloc];
 }
@@ -29,18 +33,12 @@
 -(void)main {	
 	@try {
 		if ([self connect]) {
-			//[self setSuccess:[client savePost:username :topicId :body]];
+			[self setSuccess:[client savePost:username :topicId :body]];
 		}
 	}
 	
 	@catch (id theException) {
-    /*
-		if ([theException isKindOfClass:[RecordInvalid class]]) {
-			[self setErrorMessage:[theException message]];
-		} else {
-			[self setErrorMessage:@"There was an error saving your post, please try again"];
-		}
-    */
+		[self setErrorMessage:@"There was an error saving your post, please try again"];
 	}
 }
 

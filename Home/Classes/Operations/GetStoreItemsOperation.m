@@ -14,7 +14,7 @@
 @synthesize categoryId;
 
 
--(id)initWithCategoryId:(NSInteger)theCategoryId {
+-(id)initWithCategoryId:(NSString *)theCategoryId {
 	if ((self = [super init])) {
 		[self setCategoryId:theCategoryId];
 	}
@@ -23,6 +23,7 @@
 
 
 -(void)dealloc {
+  [categoryId release];
 	[items release];
 	[super dealloc];
 }

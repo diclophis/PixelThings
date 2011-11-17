@@ -5,7 +5,7 @@
 }
 
 
-- (int32_t) id;
+- (NSString *) uid;
 - (NSString *) categoryDescription;
 
 

@@ -5,15 +5,15 @@
 
 
 @interface SavePostOperation : Operation {
-	NSInteger topicId;
+	NSString *topicId;
 	NSString *body;
 }
 
-@property NSInteger topicId;
+@property (retain) NSString *topicId;
 @property (retain) NSString *body;
 
 
--(id)initWithTopicId:(NSInteger)theTopicId andBody:(NSString *)theBody;
+-(id)initWithTopicId:(NSString *)theTopicId andBody:(NSString *)theBody;
 
 
 @end

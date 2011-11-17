@@ -9,7 +9,7 @@
 - (int32_t) x;
 - (int32_t) y;
 - (int32_t) z;
-- (int32_t) itemId;
+- (NSString *) itemId;
 - (int32_t) currentVariation;
 - (NSString *) filename;
 - (int32_t) variations;

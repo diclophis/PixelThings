@@ -188,10 +188,10 @@
 -(void)likeRoom:(NSString *)friendUsername;
 -(void)fetchRandomFriendsRoom;
 -(void)fetchRecentWallItems:(NSString *)theFriendUsername forPage:(NSInteger)page;
--(void)fetchTopics:(NSInteger)forumId forPage:(NSInteger)page;
--(void)saveTopicInForum:(NSInteger)forumId withTitle:(NSString *)title;
--(void)fetchPosts:(NSInteger)topicId forPage:(NSInteger)page;
--(void)savePostInTopic:(NSInteger)topicId withBody:(NSString *)body;
+-(void)fetchTopics:(NSString *)forumId forPage:(NSInteger)page;
+-(void)saveTopicInForum:(NSString *)forumId withTitle:(NSString *)title;
+-(void)fetchPosts:(NSString *)topicId forPage:(NSInteger)page;
+-(void)savePostInTopic:(NSString *)topicId withBody:(NSString *)body;
 -(void)doCharacterAnimationOperation;
 -(void)saveMessage:(NSString *)theMessage forWall:(NSString *)theFriendUsername; 
 -(void)fetchMyRecentLikes:(NSInteger)page;
@@ -199,7 +199,7 @@
 -(void)fetchRecentLikes:(NSString *)friendUsername forPage:(NSInteger)page;
 -(void)fetchRecentVisits:(NSString *)friendUsername forPage:(NSInteger)page;
 -(void)fetchStoreCategories;
--(void)fetchItemsForCategory:(NSInteger)categoryId;
+-(void)fetchItemsForCategory:(NSString *)categoryId;
 -(void)purchaseItem:(FunItem *)theItem;
 -(void)fetchPurchasedItemsForCategory:(NSString *)theCategoryDescription;
 -(void)fetchExternalApps;

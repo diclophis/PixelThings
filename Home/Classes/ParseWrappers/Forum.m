@@ -9,7 +9,7 @@
 @implementation Forum
 
 
-- (int32_t) id {
+- (NSString *) uid {
 }
 
 

@@ -11,7 +11,7 @@ static const CGFloat gutter = 10.0f;
 
 @interface Item : UIImageView <NSCopying> {
 	NSInteger currentVariation;
-	NSInteger itemId;
+	NSString *itemId;
 	BOOL dropped;
 	NSString *filename;
 	NSInteger variations;
@@ -20,7 +20,7 @@ static const CGFloat gutter = 10.0f;
 }
 
 
-@property NSInteger itemId;
+@property (retain) NSString *itemId;
 @property (retain) NSString *filename;
 @property NSInteger currentVariation;
 @property NSInteger variations;
@@ -29,8 +29,8 @@ static const CGFloat gutter = 10.0f;
 @property BOOL constrained;
 
 
--(id)initWithItemId:(NSInteger)theItemId andFilename:(NSString *)theFilename andVariations:(NSInteger)theVariations andFrames:(NSInteger)theFrames andConstrained:(BOOL)theConstrained andCurrentVariation:(NSInteger)theCurrentVariation;
--(void)setItemId:(NSInteger)theItemId andFilename:(NSString *)theFilename andVariations:(NSInteger)theVariations andFrames:(NSInteger)theFrames andConstrained:(BOOL)theConstrained andCurrentVariation:(NSInteger)theCurrentVariation;
+-(id)initWithItemId:(NSString *)theItemId andFilename:(NSString *)theFilename andVariations:(NSInteger)theVariations andFrames:(NSInteger)theFrames andConstrained:(BOOL)theConstrained andCurrentVariation:(NSInteger)theCurrentVariation;
+-(void)setItemId:(NSString *)theItemId andFilename:(NSString *)theFilename andVariations:(NSInteger)theVariations andFrames:(NSInteger)theFrames andConstrained:(BOOL)theConstrained andCurrentVariation:(NSInteger)theCurrentVariation;
 
 -(void)alter;
 -(void)drop;

@@ -6,18 +6,18 @@
 
 
 @interface FetchPostsOperation : Operation {
-	NSInteger topicId;
+	NSString *topicId;
 	NSInteger page;
 	PaginatedPosts *pager;
 }
 
 
-@property NSInteger topicId;
+@property (retain) NSString *topicId;
 @property NSInteger page;
 @property (retain) PaginatedPosts *pager;
 
 
--(id)initWithTopicId:(NSInteger)theTopicId andPage:(NSInteger)thePage;
+-(id)initWithTopicId:(NSString *)theTopicId andPage:(NSInteger)thePage;
 
 
 @end

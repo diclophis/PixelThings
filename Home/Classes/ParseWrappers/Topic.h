@@ -5,8 +5,8 @@
 }
 
 
-- (int32_t) id;
-- (int32_t) forumId;
+- (NSString *) uid;
+- (NSString *) forumId;
 - (NSString *) username;
 - (NSString *) title;
 - (int32_t) hits;

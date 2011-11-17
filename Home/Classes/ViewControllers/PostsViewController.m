@@ -158,7 +158,7 @@
 	[loadMoreButton setHidden:YES];
 	[refreshButton setHidden:YES];
 	[addPostButton setHidden:YES];
-	[[OperationsManager sharedInstance] fetchPosts:[topic id] forPage:1];
+	[[OperationsManager sharedInstance] fetchPosts:[topic uid] forPage:1];
 }
 
 
@@ -172,7 +172,7 @@
 
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
-	[[OperationsManager sharedInstance] savePostInTopic:[topic id] withBody:[inputField text]];
+	[[OperationsManager sharedInstance] savePostInTopic:[topic uid] withBody:[inputField text]];
 	[inputField resignFirstResponder];
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:ANIMATION_DURATION];
@@ -230,7 +230,7 @@
 	[addPostButton setHidden:YES];
 	[refreshButton setHidden:YES];
 	[activityView startAnimating];
-	[[OperationsManager sharedInstance] fetchPosts:[topic id] forPage:[pager currentPage] + 1];
+	[[OperationsManager sharedInstance] fetchPosts:[topic uid] forPage:[pager currentPage] + 1];
 }
 
 
@@ -241,7 +241,7 @@
 	[activityView startAnimating];
 	[self setPosts:nil];
 	[[self tableView] reloadData];
-	[[OperationsManager sharedInstance] fetchPosts:[topic id] forPage:1];
+	[[OperationsManager sharedInstance] fetchPosts:[topic uid] forPage:1];
 }
 
 

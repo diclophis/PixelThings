@@ -14,7 +14,7 @@
 -(StatusBubble *)initWithOrigin:(CGPoint)theOrigin andTarget:(id)theTarget andClickAction:(SEL)theClickAction {
 	Item *imageview;
 	imageview = [[[Item alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 75.0, 75.0)] autorelease];
-	[imageview setItemId:1 andFilename:@"bubble" andVariations:1 andFrames:1 andConstrained:NO andCurrentVariation:0];
+	[imageview setItemId:@"1" andFilename:@"bubble" andVariations:1 andFrames:1 andConstrained:NO andCurrentVariation:0];
 	
 	CGSize size = [imageview frame].size;
 	[imageview setFrame:CGRectMake(0, 0, size.width, size.height)];

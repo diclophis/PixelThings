@@ -16,7 +16,7 @@
 @synthesize pager;
 
 
--(id)initWithForumId:(NSInteger)theForumId andPage:(NSInteger)thePage {
+-(id)initWithForumId:(NSString *)theForumId andPage:(NSInteger)thePage {
 	if ((self = [super init])) {
 		[self setForumId:theForumId];
 		[self setPage:thePage];
@@ -26,6 +26,7 @@
 
 
 -(void)dealloc {
+  [forumId release];
 	[pager release];
 	[super dealloc];
 }
