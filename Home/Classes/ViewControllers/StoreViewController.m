@@ -181,7 +181,8 @@
 -(void)tableView:(UITableView *)theTableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	Item *item = (Item *)[[cell contentView] viewWithTag:1];
 	ItemCategory *category = [categories objectAtIndex:[indexPath row]];
-	[item setItemId:[category uid] andFilename:[NSString stringWithFormat:@"wang_%@", [category uid]] andVariations:1 andFrames:1 andConstrained:NO andCurrentVariation:0];
+  //TODO
+	[item setItemId:[category uid] andFilename:[NSString stringWithFormat:@"%@", [category uid]] andVariations:1 andFrames:1 andConstrained:NO andCurrentVariation:0];
 }
 
 

@@ -166,7 +166,8 @@
 
 	Item *item = (Item *)[[cell contentView] viewWithTag:1];
 	FunItem *funItem = [items objectAtIndex:[indexPath row]];
-	[item setItemId:[funItem uid] andFilename:[NSString stringWithFormat:@"wang_%@", [funItem uid]] andVariations:1 andFrames:1 andConstrained:NO andCurrentVariation:0];
+  //TODO
+	[item setItemId:[funItem uid] andFilename:[NSString stringWithFormat:@"%@", [funItem uid]] andVariations:1 andFrames:1 andConstrained:NO andCurrentVariation:0];
 	
 	titleLabel = (UILabel *)[[cell contentView] viewWithTag:2];
 	costLabel = (UILabel *)[[cell contentView] viewWithTag:3];
