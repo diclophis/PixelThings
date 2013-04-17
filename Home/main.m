@@ -7,7 +7,7 @@
 int main(int argc, char *argv[]) {
   [Parse setApplicationId:PARSE_APPLICATION_ID clientKey:PARSE_CLIENT_KEY];
   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-  int retVal = UIApplicationMain(argc, argv, nil, nil);
+  int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
   [pool release];
   return retVal;
 }
