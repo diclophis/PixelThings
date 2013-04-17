@@ -77,13 +77,13 @@
 	UILabel *pickerLabel;
 	
 	// Reuse the label if possible, otherwise create and configure a new one
-	if ((view == nil) /*|| ([pickerLabel class] != [UILabel class])*/) {  //newlabel
+	if (view == nil /*|| ([pickerLabel class] != [UILabel class])*/) {  //newlabel
 		
 		CGRect frame = CGRectMake(60.0, 0.0, 60, 20);
 
 		view = [[[UIView alloc] initWithFrame:frame] autorelease];
 		pickerLabel = [[[UILabel alloc] initWithFrame:frame] autorelease];
-		pickerLabel.textAlignment = UITextAlignmentLeft;
+		//pickerLabel.textAlignment = UITextAlignmentLeft;
 		pickerLabel.backgroundColor = [UIColor clearColor];
 		pickerLabel.font = [UIFont fontWithName:@"Marker Felt" size:18];
 		pickerLabel.text = @"";
@@ -137,10 +137,10 @@
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"avatar" object:nil userInfo:userInfo];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
-}
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+//    // Return YES for supported orientations
+//    return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+//}
 
 - (void)viewDidLoad {
   [super viewDidLoad];

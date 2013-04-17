@@ -618,7 +618,7 @@ static OperationsManager *operationsManagerInstance = NULL;
 		} else if ([object isKindOfClass:[PurchaseItemOperation class]]) {
 			if ([keyPath isEqualToString:@"isFinished"]) {
 				if ([object success]) {
-					[storeItemsDelegate didPurchaseItem:[object item]];
+					[storeItemsDelegate didPurchaseItem:[(PurchaseItemOperation *)object item]];
 					[executingDelegate didReceiveError:@"New item purchased" andTerminate:NO];
 				} else if (![object isCancelled] && [object allDependenciesSuccessful]) {
 					[queue cancelAllOperations];

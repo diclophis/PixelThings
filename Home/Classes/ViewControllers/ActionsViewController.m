@@ -65,7 +65,7 @@
 		[title setBackgroundColor:[UIColor clearColor]];
 		title.tag = 1;
 		title.font = [UIFont boldSystemFontOfSize:14.0];
-		title.textAlignment = UITextAlignmentLeft;
+		//title.textAlignment = UITextAlignmentLeft;
 		title.textColor = [UIColor whiteColor];
 		[cell.contentView addSubview:title];
 	} else {

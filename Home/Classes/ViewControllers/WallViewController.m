@@ -195,8 +195,8 @@
 		[timestamp setTag:1];
 		[timestamp setFont:[UIFont systemFontOfSize:12.0]];
 		[timestamp setTextColor:[UIColor whiteColor]];
-		[timestamp setTextAlignment:UITextAlignmentRight];
-		[timestamp setMinimumFontSize:10.0f];
+		//[timestamp setTextAlignment:UITextAlignmentRight];
+		//[timestamp setMinimumFontSize:10.0f];
 		[timestamp setAdjustsFontSizeToFitWidth:YES];
 		[cell.contentView addSubview:timestamp];
 		
@@ -204,7 +204,7 @@
 		message = [[[UILabel alloc] initWithFrame:CGRectMake(5.0, 5.0, 380.0f, 30.0f)] autorelease];
 		[message setTag:2];
 		[message setNumberOfLines:0];
-		[message setLineBreakMode:UILineBreakModeWordWrap];
+		//[message setLineBreakMode:UILineBreakModeWordWrap];
 		[message setFont:[UIFont systemFontOfSize:14.0f]];
 		[message setBackgroundColor:[UIColor clearColor]];
 		[message setTextColor:[UIColor whiteColor]];
@@ -215,7 +215,7 @@
 		message = (UILabel *)[cell.contentView viewWithTag:2];
 	}
 	
-	CGSize size = [[self messageForWallItem:field] sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(380.0f, CGFLOAT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+	CGSize size = [[self messageForWallItem:field] sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(380.0f, CGFLOAT_MAX) lineBreakMode:NSLineBreakByCharWrapping];
 	[message setFrame:CGRectMake(5.0, 5.0, size.width, size.height)];
 	[timestamp setText:[[[field createdAt] date] timeAgo]];
 	[message setText:[self messageForWallItem:field]];
@@ -262,7 +262,7 @@
 -(CGFloat)tableView:(UITableView *)theTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 	WallItem *field = [wallItems objectAtIndex:[indexPath row]]; 
 	NSString *message = [self messageForWallItem:field];
-	CGSize size = [message sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(380.0f, CGFLOAT_MAX) lineBreakMode:UILineBreakModeCharacterWrap];
+	CGSize size = [message sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(380.0f, CGFLOAT_MAX) lineBreakMode:NSLineBreakByCharWrapping];
 	return size.height + 10.0f;
 }
 

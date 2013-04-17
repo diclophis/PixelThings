@@ -13,8 +13,10 @@
 
 
 -(void)applicationDidFinishLaunching:(UIApplication *)application {
-  [application setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
-	[window addSubview:[mainView view]];
+    //[application setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+	//[window addSubview:[mainView view]];
+    
+    [window setRootViewController:mainView];
 	[window makeKeyAndVisible];
 }
 

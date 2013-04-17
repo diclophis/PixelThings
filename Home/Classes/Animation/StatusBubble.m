@@ -21,13 +21,13 @@
 	[self setBubble:imageview];
 	UILabel *textView = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, size.width - 20, size.height - 50)];
 	[textView setBackgroundColor:[UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0]];
-	[textView setMinimumFontSize:10.0f];
+	//[textView setMinimumFontSize:10.0f];
 	[textView setAdjustsFontSizeToFitWidth:YES];
 	[textView setNumberOfLines:0];
 	
 	[textView setBackgroundColor:[UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0]];
 	[textView setFont:[UIFont systemFontOfSize:11.0]];
-	[textView setTextAlignment:UITextAlignmentCenter];
+	//[textView setTextAlignment:UITextAlignmentCenter];
 	[imageview addSubview:textView];
 	[textView setText:nil];
 	[self setText:textView];

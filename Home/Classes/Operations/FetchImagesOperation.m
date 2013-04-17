@@ -43,8 +43,8 @@
 					foundAll = NO;
 				}
 								
-				//NSString *url = @"http://placekitten.com.s3.amazonaws.com/homepage-samples/200/138.jpg"; //[NSString stringWithFormat:@"%@/images/%@", @"http://DEADwhatthefuck.com", filename];
-				NSString *url = [NSString stringWithFormat:@"http://risingcode.com/button/%@", filename]; //[NSString stringWithFormat:@"%@/images/%@", @"http://DEADwhatthefuck.com", filename];
+				NSString *url = @"http://placekitten.com.s3.amazonaws.com/homepage-samples/200/138.jpg"; //[NSString stringWithFormat:@"%@/images/%@", @"http://DEADwhatthefuck.com", filename];
+				//NSString *url = [NSString stringWithFormat:@"http://risingcode.com/button/%@", filename]; //[NSString stringWithFormat:@"%@/images/%@", @"http://DEADwhatthefuck.com", filename];
 				NSString *filenameToSave = [documentsDirectory stringByAppendingPathComponent:filename];
 				NSError *error = nil;
 				NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url] options:NSDataReadingMapped error:&error];

@@ -49,7 +49,9 @@
 		[self setProgress:[NSNumber numberWithFloat:0.0f]];
 		[self setDflts:[NSUserDefaults standardUserDefaults]];
 		[self setUsername:[dflts objectForKey:@"Account.JID"]];
-		[self setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+		//[self setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+        [self setDeviceIdentifier:@"random-uuid"];
+
 	}
 	return self;
 }

@@ -202,11 +202,11 @@
 		[username setBackgroundColor:[UIColor clearColor]];
 		[username setTag:1];
 		[username setFont:[UIFont systemFontOfSize:11.0]];
-		[username setTextAlignment:UITextAlignmentLeft];
+		//[username setTextAlignment:UITextAlignmentLeft];
 		[username setTextColor:[UIColor whiteColor]];
-		[username setMinimumFontSize:5.0f];
+		//[username setMinimumFontSize:5.0f];
 		[username setAdjustsFontSizeToFitWidth:YES];
-		[username setLineBreakMode:UILineBreakModeWordWrap];
+		//[username setLineBreakMode:UILineBreakModeWordWrap];
 		[username setNumberOfLines:1];
 		
 		timestamp = [[[UILabel alloc] initWithFrame:CGRectMake(390.0, 5.0, 85.0, 30.0)] autorelease];
@@ -214,8 +214,8 @@
 		[timestamp setTag:2];
 		[timestamp setFont:[UIFont systemFontOfSize:12.0]];
 		[timestamp setTextColor:[UIColor whiteColor]];
-		[timestamp setTextAlignment:UITextAlignmentRight];
-		[timestamp setMinimumFontSize:10.0f];
+		//[timestamp setTextAlignment:UITextAlignmentRight];
+		//[timestamp setMinimumFontSize:10.0f];
 		[timestamp setAdjustsFontSizeToFitWidth:YES];
 		[cell.contentView addSubview:timestamp];
 		

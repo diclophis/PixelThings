@@ -285,22 +285,22 @@
 		[title setBackgroundColor:[UIColor clearColor]];
 		[title setTag:1];
 		[title setFont:[UIFont boldSystemFontOfSize:13.0]];
-		[title setTextAlignment:UITextAlignmentLeft];
+		//[title setTextAlignment:UITextAlignmentLeft];
 		[title setTextColor:[UIColor whiteColor]];
-		[title setMinimumFontSize:5.0f];
+		//[title setMinimumFontSize:5.0f];
 		[title setAdjustsFontSizeToFitWidth:YES];
-		[title setLineBreakMode:UILineBreakModeWordWrap];
+		//[title setLineBreakMode:UILineBreakModeWordWrap];
 		[title setNumberOfLines:0];
 		
 		username = [[[UILabel alloc] initWithFrame:CGRectMake(5.0, 40.0, 415.0, 15.0)] autorelease];
 		[username setBackgroundColor:[UIColor clearColor]];
 		[username setTag:2];
 		[username setFont:[UIFont systemFontOfSize:11.0]];
-		[username setTextAlignment:UITextAlignmentLeft];
+		//[username setTextAlignment:UITextAlignmentLeft];
 		[username setTextColor:[UIColor whiteColor]];
-		[username setMinimumFontSize:5.0f];
+		//[username setMinimumFontSize:5.0f];
 		[username setAdjustsFontSizeToFitWidth:YES];
-		[username setLineBreakMode:UILineBreakModeWordWrap];
+		//[username setLineBreakMode:UILineBreakModeWordWrap];
 		[username setNumberOfLines:1];
 		
 

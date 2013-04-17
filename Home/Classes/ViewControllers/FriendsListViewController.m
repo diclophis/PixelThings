@@ -87,7 +87,7 @@
 		[nickname setBackgroundColor:[UIColor clearColor]];
 		nickname.tag = 2;
 		nickname.font = [UIFont boldSystemFontOfSize:14.0];
-		nickname.textAlignment = UITextAlignmentLeft;
+		//nickname.textAlignment = UITextAlignmentLeft;
 		nickname.textColor = [UIColor whiteColor];
 		[cell.contentView addSubview:nickname];
 		
@@ -95,7 +95,7 @@
 		[status setBackgroundColor:[UIColor clearColor]];
 		status.tag = 3;
 		status.font = [UIFont systemFontOfSize:13.0];
-		status.textAlignment = UITextAlignmentRight;
+		//status.textAlignment = UITextAlignmentRight;
 		status.textColor = [UIColor whiteColor];
 		
 		[cell.contentView addSubview:status];

@@ -19,7 +19,7 @@
 
 -(NSString *)getAvatarPieceNameForColumn:(NSInteger)pickerColumn
 {
-	NSString *result;
+	NSString *result = nil;
 	switch (pickerColumn) {
 		case 0:
 			result =@"hairul";

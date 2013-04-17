@@ -72,7 +72,7 @@
 		[title setBackgroundColor:[UIColor clearColor]];
 		title.tag = 2;
 		title.font = [UIFont boldSystemFontOfSize:14.0];
-		title.textAlignment = UITextAlignmentLeft;
+		//title.textAlignment = UITextAlignmentLeft;
 		title.textColor = [UIColor whiteColor];
 		[cell.contentView addSubview:title];
 		
@@ -80,7 +80,7 @@
 		[longDescription setBackgroundColor:[UIColor clearColor]];
 		longDescription.tag = 3;
 		longDescription.font = [UIFont systemFontOfSize:12.0];
-		longDescription.textAlignment = UITextAlignmentLeft;
+		//longDescription.textAlignment = UITextAlignmentLeft;
 		longDescription.textColor = [UIColor whiteColor];
 		[cell.contentView addSubview:longDescription];
 		

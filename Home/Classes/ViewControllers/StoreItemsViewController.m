@@ -135,7 +135,7 @@
 		
 		titleLabel = [[[UILabel alloc] initWithFrame:CGRectMake(100.0f, 5.0f, 285.0f, 60.0f)] autorelease];
 		[titleLabel setAdjustsFontSizeToFitWidth:YES];
-		[titleLabel setMinimumFontSize:8.0f];
+		//[titleLabel setMinimumFontSize:8.0f];
 		[titleLabel setTag:2];
 		[titleLabel setBackgroundColor:[UIColor clearColor]];
 		[titleLabel setTextColor:[UIColor blackColor]];
@@ -143,7 +143,7 @@
 		
 		costLabel = [[[UILabel alloc] initWithFrame:CGRectMake(290.0f, 5.0f, 90.0f, 60.0f)] autorelease];
 		[costLabel setAdjustsFontSizeToFitWidth:YES];
-		[costLabel setMinimumFontSize:8.0f];
+		//[costLabel setMinimumFontSize:8.0f];
 		[costLabel setTag:3];
 		[costLabel setBackgroundColor:[UIColor clearColor]];
 		[costLabel setTextColor:[UIColor blackColor]];
@@ -233,7 +233,7 @@
 -(void)refresh:(id)sender {
 	[refreshButton setHidden:YES];
 	[activityView startAnimating];
-	[self setItems:[[NSArray alloc] init]];
+	[self setItems:nil];
 	[[self tableView] reloadData];
 	[[OperationsManager sharedInstance] fetchItemsForCategory:[category uid]];
 }

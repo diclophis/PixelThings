@@ -251,7 +251,7 @@
 	[loadMoreButton setHidden:YES];
 	[refreshButton setHidden:YES];
 	[activityView startAnimating];
-	[self setWallItems:[[NSArray alloc] init]];
+	[self setWallItems:nil];
 	[[self tableView] reloadData];
 	[[OperationsManager sharedInstance] fetchRecentWallItems:friendUsername forPage:1];
 }
@@ -260,7 +260,7 @@
 -(UITableViewCell *)tableView:(UITableView *)theTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	WallItem *field = [wallItems objectAtIndex:[indexPath row]];
 	NSString *formattedMessage = [self messageForWallItem:field];
-	CGSize messageSize = [formattedMessage sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(380.0f, CGFLOAT_MAX) lineBreakMode:UILineBreakModeCharacterWrap];
+	CGSize messageSize = [formattedMessage sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(380.0f, CGFLOAT_MAX) lineBreakMode:NSLineBreakByCharWrapping];
 	
 	UILabel *timestamp, *message;
 	UITableViewCell *cell = [theTableView dequeueReusableCellWithIdentifier:@"wallCell"];
@@ -272,9 +272,9 @@
 		[timestamp setTag:1];
 		[timestamp setBackgroundColor:[UIColor clearColor]];
 		[timestamp setTextColor:[UIColor whiteColor]];
-		[timestamp setTextAlignment:UITextAlignmentRight];
+		//[timestamp setTextAlignment:UITextAlignmentRight];
 		[timestamp setAdjustsFontSizeToFitWidth:YES];
-		[timestamp setMinimumFontSize:10.0f];
+		//[timestamp setMinimumFontSize:10.0f];
 		[cell.contentView addSubview:timestamp];
 		
 		message = [[[UILabel alloc] initWithFrame:CGRectMake(5.0, 5.0, 380.0f, 30.0f)] autorelease];
@@ -282,7 +282,7 @@
 		[message setBackgroundColor:[UIColor clearColor]];
 		[message setTextColor:[UIColor whiteColor]];
 		[message setFont:[UIFont systemFontOfSize:14.0f]];
-		[message setLineBreakMode:UILineBreakModeCharacterWrap];
+		//[message setLineBreakMode:UILineBreakModeCharacterWrap];
 		[message setNumberOfLines:0];
 		
 		[cell.contentView addSubview:message];
@@ -341,7 +341,7 @@
 -(CGFloat)tableView:(UITableView *)theTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 	WallItem *field = [wallItems objectAtIndex:[indexPath row]]; 
 	NSString *message = [self messageForWallItem:field];
-	CGSize size = [message sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(380.0f, CGFLOAT_MAX) lineBreakMode:UILineBreakModeCharacterWrap];
+	CGSize size = [message sizeWithFont:[UIFont systemFontOfSize:14.0f] constrainedToSize:CGSizeMake(380.0f, CGFLOAT_MAX) lineBreakMode:NSLineBreakByCharWrapping];
 	return size.height + 10.0f;
 }
 

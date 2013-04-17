@@ -305,33 +305,33 @@
 		[title setBackgroundColor:[UIColor clearColor]];
 		[title setTag:1];
 		[title setFont:[UIFont boldSystemFontOfSize:13.0]];
-		[title setTextAlignment:UITextAlignmentLeft];
+		//[title setTextAlignment:UITextAlignmentLeft];
 		[title setTextColor:[UIColor whiteColor]];
-		[title setMinimumFontSize:5.0f];
+		//[title setMinimumFontSize:5.0f];
 		[title setAdjustsFontSizeToFitWidth:YES];
-		[title setLineBreakMode:UILineBreakModeWordWrap];
+		//[title setLineBreakMode:UILineBreakModeWordWrap];
 		[title setNumberOfLines:0];
 		
 		username = [[[UILabel alloc] initWithFrame:CGRectMake(5.0, 40.0, 415.0, 15.0)] autorelease];
 		[username setBackgroundColor:[UIColor clearColor]];
 		[username setTag:2];
 		[username setFont:[UIFont systemFontOfSize:11.0]];
-		[username setTextAlignment:UITextAlignmentLeft];
+		//[username setTextAlignment:UITextAlignmentLeft];
 		[username setTextColor:[UIColor whiteColor]];
-		[username setMinimumFontSize:5.0f];
+		//[username setMinimumFontSize:5.0f];
 		[username setAdjustsFontSizeToFitWidth:YES];
-		[username setLineBreakMode:UILineBreakModeWordWrap];
+		//[username setLineBreakMode:UILineBreakModeWordWrap];
 		[username setNumberOfLines:1];
 		
 		posts = [[[UILabel alloc] initWithFrame:CGRectMake(425.0, 5.0, 50.0, 50.0)] autorelease];
 		[posts setBackgroundColor:[UIColor clearColor]];
 		[posts setTag:3];
 		[posts setFont:[UIFont boldSystemFontOfSize:15.0]];
-		[posts setTextAlignment:UITextAlignmentCenter];
+		//[posts setTextAlignment:UITextAlignmentCenter];
 		[posts setTextColor:[UIColor whiteColor]];
-		[posts setMinimumFontSize:5.0f];
+		//[posts setMinimumFontSize:5.0f];
 		[posts setAdjustsFontSizeToFitWidth:YES];
-		[posts setLineBreakMode:UILineBreakModeWordWrap];
+		//[posts setLineBreakMode:UILineBreakModeWordWrap];
 		[posts setNumberOfLines:2];
 		
 		
@@ -339,11 +339,11 @@
 		[recent setBackgroundColor:[UIColor clearColor]];
 		[recent setTag:4];
 		[recent setFont:[UIFont systemFontOfSize:11.0]];
-		[recent setTextAlignment:UITextAlignmentLeft];
+		//[recent setTextAlignment:UITextAlignmentLeft];
 		[recent setTextColor:[UIColor whiteColor]];
-		[recent setMinimumFontSize:5.0f];
+		//[recent setMinimumFontSize:5.0f];
 		[recent setAdjustsFontSizeToFitWidth:YES];
-		[recent setLineBreakMode:UILineBreakModeWordWrap];
+		//[recent setLineBreakMode:UILineBreakModeWordWrap];
 		[recent setNumberOfLines:1];
 		
 		[cell.contentView addSubview:title];
