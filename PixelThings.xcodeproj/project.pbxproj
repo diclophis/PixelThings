@@ -289,6 +289,7 @@
 		C277581F1034A25400A76042 /* ui_useronline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_useronline.png; sourceTree = "<group>"; };
 		C27758201034A25400A76042 /* ui_wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_wall.png; sourceTree = "<group>"; };
 		C27758221034A25400A76042 /* ui_wallitems.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_wallitems.png; sourceTree = "<group>"; };
+		C2DCC189171E7C2700A89C96 /* parse_keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parse_keys.h; sourceTree = "<group>"; };
 		D6B195A3107D3C3900B98EDB /* ui_friendspressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_friendspressed.png; sourceTree = "<group>"; };
 		D6B195FF107D489F00B98EDB /* ui_addpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_addpressed.png; sourceTree = "<group>"; };
 		D6B19600107D489F00B98EDB /* ui_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_chat.png; sourceTree = "<group>"; };
@@ -331,7 +332,6 @@
 		FC7C3B0314723ED8007688D8 /* StoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreViewController.xib; sourceTree = "<group>"; };
 		FC7C3B0414723ED8007688D8 /* TopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicsViewController.xib; sourceTree = "<group>"; };
 		FC7C3B0514723ED8007688D8 /* WallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WallViewController.xib; sourceTree = "<group>"; };
-		FCAA46761472F12C00AA174B /* parse_keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse_keys.h; sourceTree = "<group>"; };
 		FCAD914114708979005FFA89 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FCAD91431470898A005FFA89 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		FCAD91451470899C005FFA89 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -612,7 +612,7 @@
 		C215B73C1033A883007C3C2C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				FCAA46761472F12C00AA174B /* parse_keys.h */,
+				C2DCC189171E7C2700A89C96 /* parse_keys.h */,
 				FCCB86BD147240190016F26D /* Classes */,
 				FC7C3AE514723ED8007688D8 /* Interfaces */,
 				C27757D61034A25400A76042 /* LookAndFeel */,
@@ -1308,221 +1308,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		000A03B21059F7270013F545 /* Ad Hoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				COPY_PHASE_STRIP = YES;
-				GCC_ALTIVEC_EXTENSIONS = NO;
-				GCC_AUTO_VECTORIZATION = NO;
-				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
-				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
-				GCC_CW_ASM_SYNTAX = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_DEBUGGING_SYMBOLS = default;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_ASM_KEYWORD = YES;
-				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
-				GCC_ENABLE_CPP_EXCEPTIONS = YES;
-				GCC_ENABLE_CPP_RTTI = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
-				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = unsupported;
-				GCC_ENABLE_PASCAL_STRINGS = YES;
-				GCC_ENABLE_SSE3_EXTENSIONS = NO;
-				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
-				GCC_ENABLE_SYMBOL_SEPARATION = YES;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_FAST_MATH = NO;
-				GCC_FAST_OBJC_DISPATCH = YES;
-				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
-				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_INPUT_FILETYPE = automatic;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
-				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
-				GCC_MODEL_PPC64 = NO;
-				GCC_MODEL_TUNING = G4;
-				GCC_NO_COMMON_BLOCKS = NO;
-				GCC_OBJC_CALL_CXX_CDTORS = NO;
-				GCC_ONE_BYTE_BOOL = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PFE_FILE_C_DIALECTS = "c objective-c c++ objective-c++";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_REUSE_STRINGS = YES;
-				GCC_SHORT_ENUMS = NO;
-				GCC_STRICT_ALIASING = NO;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_THREADSAFE_STATICS = YES;
-				GCC_UNROLL_LOOPS = NO;
-				GCC_USE_GCC3_PFE_SUPPORT = YES;
-				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
-				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
-				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Home/Classes\"",
-					"\"$(SRCROOT)/Home/Classes/ParseWrappers\"",
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_CFLAGS = "";
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				SDKROOT = iphoneos4.3;
-			};
-			name = "Ad Hoc";
-		};
-		000A03B31059F7270013F545 /* Ad Hoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Home\"",
-				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
-				INFOPLIST_FILE = "Home/Home-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OBJC_PRINT_REPLACED_METHODS = YES;
-				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = "Pixel Things";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos4.3;
-				ZERO_LINK = NO;
-			};
-			name = "Ad Hoc";
-		};
-		00B4EF8C103F9EE400604440 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_ALTIVEC_EXTENSIONS = NO;
-				GCC_AUTO_VECTORIZATION = NO;
-				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
-				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
-				GCC_CW_ASM_SYNTAX = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_DEBUGGING_SYMBOLS = default;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_ASM_KEYWORD = YES;
-				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
-				GCC_ENABLE_CPP_EXCEPTIONS = YES;
-				GCC_ENABLE_CPP_RTTI = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
-				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = unsupported;
-				GCC_ENABLE_PASCAL_STRINGS = YES;
-				GCC_ENABLE_SSE3_EXTENSIONS = NO;
-				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
-				GCC_ENABLE_SYMBOL_SEPARATION = YES;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_FAST_MATH = NO;
-				GCC_FAST_OBJC_DISPATCH = YES;
-				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
-				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_INPUT_FILETYPE = automatic;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
-				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
-				GCC_MODEL_PPC64 = NO;
-				GCC_MODEL_TUNING = G4;
-				GCC_NO_COMMON_BLOCKS = NO;
-				GCC_OBJC_CALL_CXX_CDTORS = NO;
-				GCC_ONE_BYTE_BOOL = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PFE_FILE_C_DIALECTS = "c objective-c c++ objective-c++";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_REUSE_STRINGS = YES;
-				GCC_SHORT_ENUMS = NO;
-				GCC_STRICT_ALIASING = NO;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_THREADSAFE_STATICS = YES;
-				GCC_UNROLL_LOOPS = NO;
-				GCC_USE_GCC3_PFE_SUPPORT = YES;
-				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
-				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
-				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Home/Classes\"",
-					"\"$(SRCROOT)/Home/Classes/ParseWrappers\"",
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_CFLAGS = "";
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos4.3;
-			};
-			name = Distribution;
-		};
-		00B4EF8D103F9EE400604440 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Home\"",
-				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
-				INFOPLIST_FILE = "Home/Home-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OBJC_PRINT_REPLACED_METHODS = YES;
-				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = "Pixel Things";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos4.3;
-				ZERO_LINK = NO;
-			};
-			name = Distribution;
-		};
 		C215B7271033A827007C3C2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1584,80 +1369,13 @@
 					"\"$(SRCROOT)/Home/Classes\"",
 					"\"$(SRCROOT)/Home/Classes/ParseWrappers\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos4.3;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
-		};
-		C215B7281033A827007C3C2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ALTIVEC_EXTENSIONS = NO;
-				GCC_AUTO_VECTORIZATION = NO;
-				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
-				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
-				GCC_CW_ASM_SYNTAX = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_DEBUGGING_SYMBOLS = default;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_ASM_KEYWORD = YES;
-				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
-				GCC_ENABLE_CPP_EXCEPTIONS = YES;
-				GCC_ENABLE_CPP_RTTI = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
-				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = unsupported;
-				GCC_ENABLE_PASCAL_STRINGS = YES;
-				GCC_ENABLE_SSE3_EXTENSIONS = NO;
-				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
-				GCC_ENABLE_SYMBOL_SEPARATION = YES;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_FAST_MATH = NO;
-				GCC_FAST_OBJC_DISPATCH = YES;
-				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
-				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_INPUT_FILETYPE = automatic;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
-				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
-				GCC_MODEL_PPC64 = NO;
-				GCC_MODEL_TUNING = G4;
-				GCC_NO_COMMON_BLOCKS = NO;
-				GCC_OBJC_CALL_CXX_CDTORS = NO;
-				GCC_ONE_BYTE_BOOL = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PFE_FILE_C_DIALECTS = "c objective-c c++ objective-c++";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_REUSE_STRINGS = YES;
-				GCC_SHORT_ENUMS = NO;
-				GCC_STRICT_ALIASING = NO;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_THREADSAFE_STATICS = YES;
-				GCC_UNROLL_LOOPS = NO;
-				GCC_USE_GCC3_PFE_SUPPORT = YES;
-				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
-				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
-				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Home/Classes\"",
-					"\"$(SRCROOT)/Home/Classes/ParseWrappers\"",
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_CFLAGS = "";
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				SDKROOT = iphoneos4.3;
-			};
-			name = Release;
 		};
 		C215B7471033A894007C3C2C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1677,7 +1395,7 @@
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
 				INFOPLIST_FILE = "Home/Home-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OBJC_PRINT_REPLACED_METHODS = YES;
 				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";
@@ -1691,46 +1409,9 @@
 				PRODUCT_NAME = "Pixel Things";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos4.3;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
-		};
-		C215B7481033A894007C3C2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Home\"",
-				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
-				INFOPLIST_FILE = "Home/Home-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OBJC_PRINT_REPLACED_METHODS = YES;
-				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = "Pixel Things";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos4.3;
-				ZERO_LINK = NO;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1739,9 +1420,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C215B7271033A827007C3C2C /* Debug */,
-				C215B7281033A827007C3C2C /* Release */,
-				000A03B21059F7270013F545 /* Ad Hoc */,
-				00B4EF8C103F9EE400604440 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1750,9 +1428,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C215B7471033A894007C3C2C /* Debug */,
-				C215B7481033A894007C3C2C /* Release */,
-				000A03B31059F7270013F545 /* Ad Hoc */,
-				00B4EF8D103F9EE400604440 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
