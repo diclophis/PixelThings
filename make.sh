@@ -6,7 +6,7 @@ do
   do
     for I in foo bar everbody wang chung tonite wooo yeaaa what cheeze kitties stuff pixels
     do
-      CAT_ID=`sh post.sh "{\"description\": \"$I $A $B\"}" http://kicksass-db.app.dev.mavenlink.net/1/classes/ItemCategory`
+      CAT_ID=`sh post.sh "{\"description\": \"$I $A $B\"}" http://kicksass-db/classes/ItemCategory`
       echo $CAT_ID
       for J in zoo bar baz whim wham numchucks stuff morestuff and
       do
