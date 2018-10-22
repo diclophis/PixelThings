@@ -71,6 +71,9 @@
 		D6B19609107D489F00B98EDB /* ui_invitepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B19603107D489F00B98EDB /* ui_invitepressed.png */; };
 		D6B1960A107D489F00B98EDB /* ui_neighborspressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B19604107D489F00B98EDB /* ui_neighborspressed.png */; };
 		FC53E2B314724BD400153A8B /* ViewableRoomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC53E2B214724BD400153A8B /* ViewableRoomItem.m */; };
+		FC5E37191C378AC800518F61 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5E37181C378AC800518F61 /* Bolts.framework */; };
+		FC5E371B1C378BF700518F61 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5E371A1C378BF700518F61 /* libsqlite3.tbd */; };
+		FC5E371D1C378C6600518F61 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5E371C1C378C6600518F61 /* StoreKit.framework */; };
 		FC6203ED147088A500EDB11F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6203EC147088A500EDB11F /* Parse.framework */; };
 		FC7C3B0614723ED8007688D8 /* ActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AE614723ED8007688D8 /* ActionsViewController.xib */; };
 		FC7C3B0714723ED8007688D8 /* AddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7C3AE714723ED8007688D8 /* AddFriendViewController.xib */; };
@@ -299,6 +302,9 @@
 		D6B19604107D489F00B98EDB /* ui_neighborspressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_neighborspressed.png; sourceTree = "<group>"; };
 		FC53E2B114724BD400153A8B /* ViewableRoomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewableRoomItem.h; sourceTree = "<group>"; };
 		FC53E2B214724BD400153A8B /* ViewableRoomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewableRoomItem.m; sourceTree = "<group>"; };
+		FC5E37181C378AC800518F61 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FC5E371A1C378BF700518F61 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FC5E371C1C378C6600518F61 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FC6203EC147088A500EDB11F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		FC7C3AE614723ED8007688D8 /* ActionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionsViewController.xib; sourceTree = "<group>"; };
 		FC7C3AE714723ED8007688D8 /* AddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriendViewController.xib; sourceTree = "<group>"; };
@@ -579,6 +585,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5E371D1C378C6600518F61 /* StoreKit.framework in Frameworks */,
+				FC5E371B1C378BF700518F61 /* libsqlite3.tbd in Frameworks */,
+				FC5E37191C378AC800518F61 /* Bolts.framework in Frameworks */,
 				FCAD9148147089A6005FFA89 /* Security.framework in Frameworks */,
 				FCAD91461470899C005FFA89 /* libz.1.1.3.dylib in Frameworks */,
 				FCAD91441470898A005FFA89 /* MobileCoreServices.framework in Frameworks */,
@@ -637,6 +646,9 @@
 		C2745B251034A5AA00E479A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC5E371C1C378C6600518F61 /* StoreKit.framework */,
+				FC5E371A1C378BF700518F61 /* libsqlite3.tbd */,
+				FC5E37181C378AC800518F61 /* Bolts.framework */,
 				FCAD9147147089A6005FFA89 /* Security.framework */,
 				FCAD91451470899C005FFA89 /* libz.1.1.3.dylib */,
 				FCAD91431470898A005FFA89 /* MobileCoreServices.framework */,
@@ -1060,6 +1072,8 @@
 /* Begin PBXProject section */
 		C215B7261033A827007C3C2C /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C215B7291033A827007C3C2C /* Build configuration list for PBXProject "PixelThings" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -1387,6 +1401,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Home\"",
+					"$(PROJECT_DIR)/Home",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1395,7 +1410,7 @@
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Home/Classes\"/**";
 				INFOPLIST_FILE = "Home/Home-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OBJC_PRINT_REPLACED_METHODS = YES;
 				OTHER_CFLAGS = "-DANIMATION_DURATION=0.1";

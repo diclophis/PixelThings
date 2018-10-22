@@ -106,14 +106,14 @@
 
 
 -(void)didReceiveError:(NSString *)message andTerminate:(BOOL)terminate {
-	NSLog(@"RETRY!!!!!!!!!!!!!!!!!!!!!!!!!! %@\n", message);
-  /*
+  //NSLog(@"RETRY!!!!!!!!!!!!!!!!!!!!!!!!!! %@\n", message);
+  
   if (message) {
     [tickerView enqueueMessage:message withType:nil];
   } else {
     [tickerView enqueueMessage:@"oops" withType:nil];
   }
-  */
+  
 }
 
 

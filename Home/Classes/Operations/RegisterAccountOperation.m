@@ -35,7 +35,7 @@
 
 -(void)main {
 	@try {
-		if ([self connect]) {
+    if ([self connect]) {
       if ([client registerAccount :username :email :password]) {
         [self setDflts:[NSUserDefaults standardUserDefaults]];
         [dflts setObject:username forKey:@"Account.JID"];
@@ -48,8 +48,8 @@
 	}
 	
 	@catch (id theException) {
-    NSLog(@"theException: %@", theException);
-	}		
+        NSLog(@"theException: %@", theException);
+	}
 }
 
 
